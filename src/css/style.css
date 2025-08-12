@@ -1,0 +1,151 @@
+@import url('./normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=League+Spartan:wght@100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+:root {
+    --bg-color1: #F6F6F5;
+    --bg-color1-alt: #E9F1F3;
+    --bg-border1: #181A1D;
+    --color1: #1D2226;
+    --bg-color2: #BFDAE0;
+    --bg-border2: #A0BDCF;
+    --color2: #13161C;
+    --bg-color3: #D4EAE9;
+    --bg-border3: #ACC9CF;
+    --color3: #1C2227;
+    --logo-blue: #00BFFF;
+    --highlight: #92E9EF
+    --highlight-border: #7BC6E2;
+    --highlight-color: #331814;
+    --blue-fg-title: #16334E;
+}
+
+* {
+    color: #181A1D;
+}
+
+main {
+    background-color: #F6F6F5;
+}
+
+h1 {
+    font-family: 'League Spartan', 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    letter-spacing: 5%;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: rgb(11, 35, 114);
+}
+
+h2 {
+    font-family: 'League Spartan';
+    font-size: 1.75rem;
+    letter-spacing: 5%;
+    font-weight: 600;
+    color: var(--blue-fg-title);
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Instrument Sans';
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Source Serif 4';
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: ". logo-holder dark-mode";
+}
+
+header .logo-holder {
+    justify-self: center;
+    grid-area: logo-holder;
+    padding: 6vh 0 2vh 0;
+}
+
+header .dark-mode-switch {
+    justify-self: flex-end;
+    grid-area: dark-mode;
+    padding: 2vh 2vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main .attention {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    position: relative;
+    border: solid 5px var(--blue-fg-title);
+    border-left: none;
+    border-right: none;
+}
+
+main .attention img {
+    top: 0;
+    position: absolute;
+    height: 100%;
+    opacity: 0.2;
+}
+
+main .attention h1, main .attention p {
+    padding: 0rem 1rem;
+    text-align: center;
+}
+
+main .socials {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+main .socials .socials-box {
+    width: 40vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(#D4E3E6, #2a5d68, #183E47);
+    border-radius: 0.25rem;
+}
+
+.socials-box img {
+    background-color: transparent;
+    width: 32px;
+}
+
+main .differential {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color1-alt);
+}
+
+main .differential p, main .differential h2 {
+    padding: 0 1rem;
+    text-align: center;
+}
+
+main .knowledge ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+    border-bottom: solid 1px var(--bg-border3);
+}
+
+main .knowledge ul li {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0;
+}
+
+main .knowledge li span {
+    padding-left: 0.5rem;
+}
