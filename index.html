@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt_BR" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxado Developer</title>
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="logo-holder">
             <img src="./src/img/header/maxado-logo.svg" alt="">
         </div>
-        <div class="dark-mode-switch">
+        <div class="my-name">
+            <span>
+                Marcelo Machado
+            </span>
+        </div>
+        <div id="toggleTheme" class="dark-mode-switch">
             <img src="./src/img/header/switch_on.svg" alt="">
         </div>
     </header>
     <main>
-        <section class="attention">
+        <section id="s1" class="home">
             <h1>
                 Estagiário com quase DEZ anos de experiência?!
             </h1>
@@ -28,9 +34,6 @@
             </p>
             <p>
                 Busco ativamente uma oportunidade de estágio em Front End/Web Development para aprender, contribuir e dar meus primeiros passos na minha carreira em tecnologia.
-            </p>
-            <p>
-            <img src="./src/img/home/home-project-management.jpg" alt="">
             </p>
         </section>
         <section class="socials">
@@ -46,9 +49,9 @@
                 </a>
             </div>
         </section>
-        <section class="differential">
+        <section id="s2" class="differential">
             <h2>
-                MEU DIFERENCIAL
+                Meu Diferencial
             </h2>
             <p>
                 Desenvolvimento faz parte da minha jornada desde que comecei a trabalhar como desenhista 2D com AutoCAD. Eu apenas reproduzia e fazia simulações para as equipes de vendas e desenvolvimento, porém era impossível não pensar nas coisas que poderiam ser feitas de maneira mais eficazes e/ou que trouxessem maior satisfação ao cliente. Foi por este motivo que me tornei um projetista.
@@ -64,9 +67,9 @@
                 O desenvolvimento Front End para mim é uma oportunidade de buscar desafios maiores, fazendo parte de soluções que movem o mundo e tanto impactam nossas vidas todos os dias.
             </p>
         </section>
-        <section class="knowledge">
+        <section id="s3" class="knowledge">
             <h2>
-                PRINCIPAIS COMPETÊNCIAS
+                Minhas Habilidades
             </h2>
             <ul class="front-end">
                 <h3>
@@ -167,7 +170,7 @@
                 </li>
             </ul>
         </section>
-        <section class="projects">
+        <section id="s4" class="projects">
             <h2>
                 PROJETOS
             </h2>
@@ -175,18 +178,24 @@
                 <h3>
                     Discord Page Clone
                 </h3>
-                <p>
-                    Página inicial antiga do Discord, com foco em responsividade, proposto no curso de Desenvolvimento Front End na plataforma da DIO (Santander Open Academy).
-                </p>
-                <ul>
-                    <li>
-                        Versão PC e Mobile (media queries)
-                    </li>
-                </ul>
-                <img class="pc-img pc" src="./src/img/projects/discord-clone-pc-pc.png" alt="">
-                <img class="pc-img phone" src="./src/img/projects/discord-clone-pc-phone.png" alt="">
-                <img class="phone-img pc" src="./src/img/projects/discord-clone-phone-pc.png" alt="">
-                <img class="phone-img phone" src="./src/img/projects/discord-clone-phone-phone.png" alt="">
+                <section class="presentation">
+                    <img class="pc-img pc" src="./src/img/projects/discord-clone-pc-pc.png" alt="">
+                    <img class="pc-img phone" src="./src/img/projects/discord-clone-phone-pc.png" alt="">
+                    <div>
+                        <p>
+                            Página inicial antiga do Discord, com foco em responsividade, proposto no curso de Desenvolvimento Front End na plataforma da DIO (Santander Open Academy).
+                        </p>
+                        <section class="details">
+                            <ul>
+                                <li>
+                                    Versão PC e Mobile (media queries)
+                                </li>
+                            </ul>
+                            <img class="phone-img pc" src="./src/img/projects/discord-clone-pc-phone.png" alt="">
+                            <img class="phone-img phone" src="./src/img/projects/discord-clone-phone-phone.png" alt="">
+                        </section>
+                    </div>
+                </section>
                 <div class="project-buttons">
                     <div class="preview">
                         <a target="_blank" href="https://maxadobr.github.io/discord-clone-responsivo-css-dio/">
@@ -208,21 +217,27 @@
                 <h3>
                     Youtube Page Clone
                 </h3>
-                <p>
-                    Reprodução da página inicial do Youtube com objetivo de treinar flexbox e demais propriedades de posicionamento no curso de Desenvolvimento Front End na plataforma da DIO (Santander Open Academy). O layout foi feito apenas para PC, em breve com uma segunda versão adicionando responsividade e media query para mobile.
-                </p>
-                <ul>
-                    <li>
-                        Feature 1
-                    </li>
-                    <li>
-                        Feature 2
-                    </li>
-                </ul>
-                <img class="pc-img pc" src="./src/img/projects/youtube-clone-pc-pc.png" alt="">
-                <img class="pc-img phone" src="./src/img/projects/youtube-clone-pc-phone.png" alt="">
-                <img class="phone-img pc" src="./src/img/projects/youtube-clone-phone-pc.png" alt="">
-                <img class="phone-img phone" src="./src/img/projects/youtube-clone-phone-phone.png" alt="">
+                <section class="presentation">
+                    <img class="pc-img pc" src="./src/img/projects/youtube-clone-pc-pc.png" alt="">
+                    <img class="pc-img phone" src="./src/img/projects/youtube-clone-phone-pc.png" alt="">
+                    <div>
+                        <p>
+                            Reprodução da página inicial do Youtube com objetivo de treinar flexbox e demais propriedades de posicionamento no curso de Desenvolvimento Front End na plataforma da DIO (Santander Open Academy). O layout foi feito apenas para PC, em breve com uma segunda versão adicionando responsividade e media query para mobile.
+                        </p>
+                        <section class="details">
+                            <ul>
+                                <li>
+                                    Feature 1
+                                </li>
+                                <li>
+                                    Feature 2
+                                </li>
+                            </ul>
+                            <img class="phone-img pc" src="./src/img/projects/youtube-clone-pc-phone.png" alt="">
+                            <img class="phone-img phone" src="./src/img/projects/youtube-clone-phone-phone.png" alt="">
+                        </section>
+                    </div>
+                </section>
                 <div class="project-buttons">
                     <div class="preview">
                         <a target="_blank" href="https://maxadobr.github.io/youtube-clone-css-dio/">
@@ -241,7 +256,7 @@
                 </div>
             </article>
         </section>
-        <section class="education">
+        <section id="s5" class="education">
             <h2>
                 Formação e Estudos
             </h2>
@@ -285,7 +300,7 @@
                 </span>
             </article>
         </section>
-        <section class="contacts">
+        <section id="s6" class="contacts">
             <h2>
                 Contato
             </h2>
@@ -310,12 +325,65 @@
                 </a>
             </article>
         </section>
+        <footer>
+            <p>
+                ©  2025. Todos os direitos reservados. Marcelo Machado.
+            </p>
+        </footer>
     </main>
-    <footer>
-
-    </footer>
     <nav>
-
+        <section class="section-nav">
+            <img id="side-logo" src="./src/img/header/maxado-logo.svg" alt="">
+            <a class="section-link" href="#s1">
+                <div class="section-icon">
+                    <img src="./src/img/nav/l-home-icon.svg" alt="">
+                </div>
+                <span>
+                    Home
+                </span>
+            </a>
+            <a class="section-link" href="#s2">
+                <div class="section-icon">
+                    <img src="./src/img/nav/l-differential-icon.svg" alt="">
+                </div>
+                <span>
+                    Diferencial
+                </span>
+            </a>
+            <a class="section-link" href="#s3">
+                <div class="section-icon">
+                    <img src="./src/img/nav/l-knowledge-icon.svg" alt="">
+                </div>
+                <span>
+                    Habilidades
+                </span>
+            </a>
+            <a class="section-link" href="#s4">
+                <div class="section-icon">
+                    <img src="./src/img/nav/l-projects-icon.svg" alt="">
+                </div>
+                <span>
+                    Projetos
+                </span>
+            </a>
+            <a class="section-link" href="#s5">
+                <div class="section-icon">
+                    <img src="./src/img/nav/l-education-icon.svg" alt="">
+                </div>
+                <span>
+                    Formação
+                </span>
+            </a>
+            <a class="section-link" href="#s6">
+                <div class="section-icon">
+                    <img src="./src/img/nav/l-contact-icon.svg" alt="">
+                </div>
+                <span>
+                    Contato
+                </span>
+            </a>
+        </section>
     </nav>
+    <script src="./src/js/scripts.js"></script>
 </body>
 </html>
