@@ -53,11 +53,11 @@
 <path d="M13.8101 6.41309L14.0539 7.16344H14.8433L14.2047 7.62775L14.4485 8.37885L13.8101 7.91446L13.1712 8.37885L13.4152 7.62775L12.7763 7.16344H13.5658L13.8101 6.41309Z" fill="#EFEFEF"/>
 <path d="M13.8101 9.06519L14.0539 9.81574H14.8433L14.2047 10.2799L14.4485 11.0309L13.8101 10.5666L13.1712 11.0309L13.4152 10.2799L12.7763 9.81574H13.5658L13.8101 9.06519Z" fill="#EFEFEF"/>
 <path d="M13.8101 11.717L14.0539 12.4681H14.8433L14.2047 12.9322L14.4485 13.6833L13.8101 13.2189L13.1712 13.6833L13.4152 12.9322L12.7763 12.4681H13.5658L13.8101 11.717Z" fill="#EFEFEF"/>
-<rect x="24" width="27" height="32" fill="#E9F1F3" fill-opacity="0.9" style="mix-blend-mode:lighten"/>
+<rect x="24" width="27" height="32" fill="#E9F1F3" fill-opacity="0.8" style="mix-blend-mode:lighten"/>
 </g>
 <defs>
 <clipPath id="clip0_79_134">
-<rect width="32" height="32" fill="white"/>
+<rect width="32" height="32" rx="16" fill="white"/>
 </clipPath>
 </defs>
 </svg>

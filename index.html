@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt_BR" data-theme="light">
+<html lang="pt_BR" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxado Developer</title>
     <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/img/favicon/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -18,40 +18,59 @@
             </span>
         </div>
         <div id="toggleTheme" class="dark-mode-switch">
-            <img src="./src/img/header/switch_on.svg" alt="">
+            <img src="./src/img/header/switch_on.svg" alt="" 
+            class="theme-icon"  
+            data-src-light="./src/img/header/switch_on.svg" 
+            data-src-dark="./src/img/header/switch_off.svg">
         </div>
     </header>
     <main>
         <section id="s1" class="home">
             <h1>
-                Estagiário com quase DEZ anos de experiência?!
+                Estagiário com quase <span>DEZ anos de experiência!?</span>
             </h1>
-            <p>
-                Sim, eles existem! Sou estudante de Engenharia de Software e trago comigo quase uma década de experiência no desenvolvimento de produtos e projetos técnicos herdados da indústria.
-            </p>
-            <p>
-                Hoje, meu foco é aplicar essa sólida base em resolução de problemas e design na criação de interfaces web com HTML, CSS, JavaScript.
-            </p>
-            <p>
-                Busco ativamente uma oportunidade de estágio em Front End/Web Development para aprender, contribuir e dar meus primeiros passos na minha carreira em tecnologia.
-            </p>
+            <div>
+                <img class="big-image paquimeter pc" src="./src/img/home/paquimeter-pc.jpg" alt="">
+                <img class="big-image paquimeter phone" src="./src/img/home/paquimeter-phone.jpg" alt="">
+                <p>
+                    Conheça um pouco mais sobre mim:
+                </p>
+                <p>
+                    Sou um programador Front End cursando Engenharia de Software, com uma rica experiência como desenvolvedor de produtos e projetista, trazendo soluções e buscando desafios.
+                </p>
+                <p>
+                    É pela busca por maiores desafios que agora busco aplicar o que aprendi de desenvolvimento e solução de problemas na indústria, para a tecnologia.
+                </p>
+                <p>
+                    Busco uma oportunidade de estágio em Front End/Web Development para aprender, contribuir e dar meus primeiros passos na minha carreira em tecnologia.
+                </p>
+            </div>
         </section>
         <section class="socials">
             <div class="socials-box">
                 <a href="https://www.linkedin.com/in/maxadobr/">
-                    <img src="./src/img/contact/l-linkedin.svg">
+                    <img src="./src/img/contact/l-linkedin.svg"
+                    class="theme-icon"  
+                    data-src-light="./src/img/contact/l-linkedin.svg" 
+                    data-src-dark="./src/img/contact/d-linkedin.svg">
                 </a>
                 <a href="https://github.com/maxadobr">
-                    <img src="./src/img/contact/l-github.svg">
+                    <img src="./src/img/contact/l-github.svg"
+                    class="theme-icon"  
+                    data-src-light="./src/img/contact/l-github.svg" 
+                    data-src-dark="./src/img/contact/d-github.svg">
                 </a>
                 <a target="_blank" href="https://www.instagram.com/maxadobr/">
-                    <img src="./src/img/contact/l-instagram.svg">
+                    <img src="./src/img/contact/l-instagram.svg"
+                    class="theme-icon"  
+                    data-src-light="./src/img/contact/l-instagram.svg" 
+                    data-src-dark="./src/img/contact/d-instagram.svg">
                 </a>
             </div>
         </section>
         <section id="s2" class="differential">
             <h2>
-                Meu Diferencial
+                Meu Diferencial: Do Desenvolvimento de Produtos, ao Desenvolvimento de Software
             </h2>
             <p>
                 Desenvolvimento faz parte da minha jornada desde que comecei a trabalhar como desenhista 2D com AutoCAD. Eu apenas reproduzia e fazia simulações para as equipes de vendas e desenvolvimento, porém era impossível não pensar nas coisas que poderiam ser feitas de maneira mais eficazes e/ou que trouxessem maior satisfação ao cliente. Foi por este motivo que me tornei um projetista.
@@ -59,7 +78,7 @@
             <p>
                 Como projetista, consegui trazer grandes mudanças para os processos e mediante a uma maior proximidade com os vendedores e clientes, desenvolvi não apenas produtos, mas também, grandes soluções para a empresa, que foram desde sistemas originais personalizados de controle de qualidade até novas técnicas para orçamento que aceleraram em até 500% o retorno aos clientes, sem perda alguma em precisão.
             </p>
-            <img src="./src/img/differential/product-roadmap.jpg" alt="">
+            <img class="big-image" src="./src/img/differential/product-roadmap.jpg" alt="">
             <p>
                 Depois de um bom tempo atuando na área dentro de fábricas, me esbarrei diversas vezes nas limitações e resistência à busca de inovações dentro setores que atuei, o que me fez virar os olhos ao setor que mais inova e se desafia na história recente. Tecnologia.
             </p>
@@ -218,7 +237,7 @@
                     Youtube Page Clone
                 </h3>
                 <section class="presentation">
-                    <img class="pc-img pc" src="./src/img/projects/youtube-clone-pc-pc.png" alt="">
+                    <img class="pc-img pc big-image" src="./src/img/projects/youtube-clone-pc-pc.png" alt="">
                     <img class="pc-img phone" src="./src/img/projects/youtube-clone-phone-pc.png" alt="">
                     <div>
                         <p>
@@ -233,7 +252,7 @@
                                     Feature 2
                                 </li>
                             </ul>
-                            <img class="phone-img pc" src="./src/img/projects/youtube-clone-pc-phone.png" alt="">
+                            <img class="phone-img pc big-image" src="./src/img/projects/youtube-clone-pc-phone.png" alt="">
                             <img class="phone-img phone" src="./src/img/projects/youtube-clone-phone-phone.png" alt="">
                         </section>
                     </div>
@@ -306,19 +325,28 @@
             </h2>
             <article class="contact-info">
                 <a href="https://www.linkedin.com/in/maxadobr/">
-                    <img src="./src/img/contact/l-linkedin.svg" alt="">
+                    <img src="./src/img/contact/l-linkedin.svg" alt=""
+                        class="theme-icon"  
+                        data-src-light="./src/img/contact/l-linkedin.svg" 
+                        data-src-dark="./src/img/contact/d-linkedin.svg">
                     <span>
                         linkedin.com/in/maxadobr
                     </span>
                 </a>
                 <a href="https://github.com/maxadobr">
-                    <img src="./src/img/contact/l-github.svg" alt="">
+                    <img src="./src/img/contact/l-github.svg" alt=""
+                        class="theme-icon"  
+                        data-src-light="./src/img/contact/l-github.svg" 
+                        data-src-dark="./src/img/contact/d-github.svg">
                     <span>
                         github.com/maxadobr
                     </span>
                 </a>
                 <a href="https://www.instagram.com/maxadobr/">
-                    <img src="./src/img/contact/l-instagram.svg" alt="">
+                    <img src="./src/img/contact/l-instagram.svg" alt=""
+                        class="theme-icon"  
+                        data-src-light="./src/img/contact/l-instagram.svg" 
+                        data-src-dark="./src/img/contact/d-instagram.svg">
                     <span>
                         instagram.com/maxadobr
                     </span>
@@ -336,7 +364,10 @@
             <img id="side-logo" src="./src/img/header/maxado-logo.svg" alt="">
             <a class="section-link" href="#s1">
                 <div class="section-icon">
-                    <img src="./src/img/nav/l-home-icon.svg" alt="">
+                    <img src="./src/img/nav/l-home-icon.svg" alt=""
+                        class="theme-icon"  
+                        data-src-light="./src/img/nav/l-home-icon.svg" 
+                        data-src-dark="./src/img/nav/d-home-icon.svg">
                 </div>
                 <span>
                     Home
@@ -344,7 +375,10 @@
             </a>
             <a class="section-link" href="#s2">
                 <div class="section-icon">
-                    <img src="./src/img/nav/l-differential-icon.svg" alt="">
+                    <img src="./src/img/nav/l-differential-icon.svg" alt=""
+                        class="theme-icon"  
+                        data-src-light="./src/img/nav/l-differential-icon.svg" 
+                        data-src-dark="./src/img/nav/d-differential-icon.svg">
                 </div>
                 <span>
                     Diferencial
@@ -352,7 +386,10 @@
             </a>
             <a class="section-link" href="#s3">
                 <div class="section-icon">
-                    <img src="./src/img/nav/l-knowledge-icon.svg" alt="">
+                    <img src="./src/img/nav/l-knowledge-icon.svg" alt=""
+                        class="theme-icon"  
+                        data-src-light="./src/img/nav/l-knowledge-icon.svg" 
+                        data-src-dark="./src/img/nav/d-knowledge-icon.svg">
                 </div>
                 <span>
                     Habilidades
@@ -360,7 +397,10 @@
             </a>
             <a class="section-link" href="#s4">
                 <div class="section-icon">
-                    <img src="./src/img/nav/l-projects-icon.svg" alt="">
+                    <img src="./src/img/nav/l-projects-icon.svg" alt=""
+                        class="theme-icon"  
+                        data-src-light="./src/img/nav/l-projects-icon.svg" 
+                        data-src-dark="./src/img/nav/d-projects-icon.svg">
                 </div>
                 <span>
                     Projetos
@@ -368,7 +408,10 @@
             </a>
             <a class="section-link" href="#s5">
                 <div class="section-icon">
-                    <img src="./src/img/nav/l-education-icon.svg" alt="">
+                    <img src="./src/img/nav/l-education-icon.svg" alt=""
+                        class="theme-icon"  
+                        data-src-light="./src/img/nav/l-education-icon.svg" 
+                        data-src-dark="./src/img/nav/d-education-icon.svg">
                 </div>
                 <span>
                     Formação
@@ -376,7 +419,10 @@
             </a>
             <a class="section-link" href="#s6">
                 <div class="section-icon">
-                    <img src="./src/img/nav/l-contact-icon.svg" alt="">
+                    <img src="./src/img/nav/l-contact-icon.svg" alt=""
+                        class="theme-icon"  
+                        data-src-light="./src/img/nav/l-contact-icon.svg" 
+                        data-src-dark="./src/img/nav/d-contact-icon.svg">
                 </div>
                 <span>
                     Contato

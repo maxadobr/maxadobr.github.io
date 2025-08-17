@@ -7,6 +7,7 @@ body {
     max-width: 100%;
     margin: 0;
     padding: 0;
+    background-color: var(--bg-color1);
 }
 
 *,
@@ -17,91 +18,111 @@ body {
 
 :root, :root[data-theme='light'] {
     --bg-color1: #f6fcfc;
+    --bg-color1-alpha: #f6fcfc60;
     --bg-color1-alt: #ebf6f8;
     --bg-border1: #181A1D;
     --color1: #1D2226;
     --bg-color2: #BFDAE0;
+    --bg-color2-alpha: #BFDAE060;
     --bg-border2: #A0BDCF;
     --color2: #13161C;
     --bg-color3: #D4EAE9;
+    --bg-color3-alpha: #D4EAE960;
     --bg-border3: #ACC9CF;
     --color3: #1C2227;
     --logo-blue: #00BFFF;
     --highlight: #92E9EF;
+    --highlight-alpha: #92E9EF60;
     --highlight-border: #7BC6E2;
     --highlight-color: #331814;
     --blue-fg-title: #16334E;
-    --bt-grad-default: linear-gradient(180deg, rgb(236, 240, 245), rgb(198, 206, 231));
-    --bt-grad-selected: linear-gradient(180deg, rgb(213, 220, 230), rgb(174, 184, 214));
+    --bt-grad-default: linear-gradient(180deg, 
+        var(--bg-color1), 
+        var(--bg-color3));
+    --bt-grad-selected: linear-gradient(180deg, 
+        var(--bg-color1), 
+        var(--bg-color3));
     --bt-border-default: solid 1px transparent;
+    --bt-border-hover: solid 3px rgba(164, 219, 233, 0.671);
     --bt-border-selected: solid 1px rgba(198, 206, 231, 0.5);
-    --bg-deg-alt-v: linear-gradient(180deg, #f7fcfc,
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #f7fcfc);
-    --bg-deg-alt-h: linear-gradient(90deg, #f7fcfc, 
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #f7fcfc);
+    --bg-deg-alt-v: linear-gradient(180deg, 
+        var(--bg-color1) 0%, 
+        var(--bg-color1-alt) 3%, 
+        var(--bg-color1-alt) 97%, 
+        var(--bg-color1) 100%
+    );
+    --bg-deg-alt-h: linear-gradient(90deg, 
+        var(--bg-color1) 0%, 
+        var(--bg-color1-alt) 3%, 
+        var(--bg-color1-alt) 97%, 
+        var(--bg-color1) 100%
+    );
+    --blend-mode: lighten;
 }
 
 :root[data-theme='dark'] {
-    --bg-color1: #f6fcfc;
-    --bg-color1-alt: #ebf6f8;
-    --bg-border1: #181A1D;
-    --color1: #1D2226;
-    --bg-color2: #BFDAE0;
-    --bg-border2: #A0BDCF;
-    --color2: #13161C;
-    --bg-color3: #D4EAE9;
-    --bg-border3: #ACC9CF;
-    --color3: #1C2227;
+    --bg-color1: #2A2929;
+    --bg-color1-alpha: #2a292960;
+    --bg-color1-alt: #363636;
+    --bg-border1: #4d4b4b;
+    --color1: #D5DEE3;
+    --bg-color2: #3B4B53;
+    --bg-color2-alpha: #3B4B5360;
+    --bg-border2: #657B7D;
+    --color2: #F5F3E4;
+    --bg-color3: #486061;
+    --bg-color3-alpha: #48606160;
+    --bg-border3: #6F8886;
+    --color3: #FBF8F0;
     --logo-blue: #00BFFF;
-    --highlight: #92E9EF;
-    --highlight-border: #7BC6E2;
-    --highlight-color: #331814;
-    --blue-fg-title: #16334E;
-    --bt-grad-default: linear-gradient(180deg, rgb(236, 240, 245), rgb(198, 206, 231));
-    --bt-grad-selected: linear-gradient(180deg, rgb(213, 220, 230), rgb(174, 184, 214));
+    --highlight: #73D2D5;
+    --highlight-alpha: #73D2D560;
+    --highlight-border: #A2DBD9;
+    --highlight-color: #2F211D;
+    --blue-fg-title: #64bbd1;
+    --bt-grad-default: linear-gradient(180deg, 
+        var(--bg-color1), 
+        var(--bg-color3));
+    --bt-grad-selected: linear-gradient(180deg, 
+        var(--bg-color1), 
+        var(--bg-color3));
     --bt-border-default: solid 1px transparent;
+    --bt-border-hover: solid 1px rgba(164, 219, 233, 0.671);
     --bt-border-selected: solid 1px rgba(198, 206, 231, 0.5);
-    --bg-deg-alt-v: linear-gradient(180deg, #f7fcfc,
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #f7fcfc);
-    --bg-deg-alt-h: linear-gradient(90deg, #f7fcfc, 
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, #e7f6fa, 
-    #f7fcfc);
+    --bg-deg-alt-v: linear-gradient(180deg, 
+        var(--bg-color1) 0%, 
+        var(--bg-color1-alt) 3%, 
+        var(--bg-color1-alt) 97%, 
+        var(--bg-color1) 100%
+    );
+    --bg-deg-alt-h: linear-gradient(90deg, 
+        var(--bg-color1) 0%, 
+        var(--bg-color1-alt) 3%, 
+        var(--bg-color1-alt) 97%, 
+        var(--bg-color1) 100%
+    );
+    --blend-mode: exclusion;
 }
 
 * {
-    color: #181A1D;
+    color: var(--color1);
     font-family: 'Source Serif 4', Georgia, 'Times New Roman', Times, serif;
 }
 
-h1 {
+h1, h1 > span {
     font-family: 'League Spartan', 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     letter-spacing: 5%;
     line-height: 2rem;
     font-weight: 600;
-    color: rgb(11, 35, 114);
+    color: var(--color1);
     padding: 0 1rem;
     text-align: center;
     text-transform: uppercase;
+}
+
+h1 > span {
+    color: var(--blue-fg-title);
 }
 
 h2 {
@@ -133,7 +154,6 @@ p {
     font-weight: 400;
     line-height: 1.5rem;
     margin: 0.5rem 0;
-    padding: 0 1rem;
     text-align: center;
 }
 
@@ -150,16 +170,30 @@ a {
     text-decoration: none;
 }
 
-header {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    align-items: center;
-    background: var(--bg-deg-alt-v);
-    width: 100%;
+.pc {
+    display: none;
 }
 
-header .logo-holder {
+.phone {
+    display: block;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-areas: "logoholder myname darkmode";
+    align-items: center;
+    justify-items: center;
+    background: var(--bg-deg-alt-v);
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    align-self: start;
+    z-index: 20;
+    padding: 1rem 0;
+    border-bottom: solid 1px var(--bg-border3);
+    height: fit-content;
 }
 
 header .my-name {
@@ -174,15 +208,24 @@ header .my-name {
     padding: 0 0vw;
 }
 
-header .dark-mode-switch {
-}
-
-header .dark-mode-switch img {
-    width: 4rem;
+header .my-name {
+    grid-area: myname;
 }
 
 header .my-name span {
     word-break: normal;
+}
+
+header .dark-mode-switch {
+    grid-area: darkmode;
+}
+
+header .dark-mode-switch img {
+    height: 5vh;
+}
+
+header .logo-holder {
+    grid-area: logoholder;
 }
 
 header .logo-holder img {
@@ -196,21 +239,43 @@ main {
     background-color: var(--bg-color1);
 }
 
-main section {
-    padding-bottom: 1rem;
+main > section {
+    padding: 2rem 0;
     text-wrap: wrap;
     flex-wrap: wrap;
     overflow-wrap: break-word;
 }
 
 main .home {
+    margin-top: 7rem;
     display: flex;
-    position: relative;
     flex-direction: column;
-    padding: 0.5rem 0;
+    justify-content: flex-start;
     border: inset solid 5px var(--blue-fg-title);
     border-left: none;
     border-right: none;
+}
+
+main .home > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .home > div div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main .home > div img {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+main .home div div p {
+    color: var(--color1);
+    width: 100%;
 }
 
 main .socials {
@@ -224,9 +289,10 @@ main .socials .socials-box {
     display: flex;
     justify-content: space-evenly;
     gap: 1rem;
-    background-image: var(--bg-color3);
+    background-image: var(--bg-deg-alt-v);
+    background-blend-mode: var(--blend-mode);
     border-radius: 0.5rem;
-    border: solid 1px var(--bg-border3)
+    border: solid 1px var(--bg-border2)
 }
 
 .socials-box a {
@@ -290,6 +356,7 @@ main .projects {
     justify-items: center;
     margin: 1rem 0;
     background: var(--bg-deg-alt-v);
+    padding: 0 5vw;
 }
 
 main .projects .project {
@@ -310,11 +377,11 @@ main .projects .project .details {
     flex-direction: column;
     justify-items: center;
     text-align: center;
+    gap: 3vh;
 }
 
 main .projects .project .details ul li {
-    list-style: disc;
-    list-style-position: inside;
+    list-style: inside;
 }
 
 main .projects .project img {
@@ -322,25 +389,7 @@ main .projects .project img {
     border-radius: 1rem;
     margin: 1rem 0;
     align-self: flex-start;
-    border: inset solid 1px var(--bg-border3);
 }
-
-main .projects .project .presentation .pc {
-    display: none;
-}
-
-main .projects .project .details .pc {
-    display: none;
-}
-
-main .projects .project .presentation .phone {
-    display: block;
-}
-
-main .projects .project .details .phone {
-    display: block;
-}
-
 
 main .projects .project .project-buttons {
     display: flex;
@@ -350,21 +399,22 @@ main .projects .project .project-buttons {
 }
 
 main .projects .project .project-buttons div {
-    background: linear-gradient(0deg, rgba(248, 251, 252, 0.2), rgba(210, 218, 241, 0.2));
-    /*background: linear-gradient(0deg, rgba(248, 251, 252, 0.2), rgba(248, 251, 252, 0.2));*/
-    padding: 0.1rem;
-    border-radius: 1.05rem; 
+    margin: 2rem 1rem 0 1rem;
 }
 
 main .projects .project .project-buttons div button {
     height: 3rem;
-    width: 10rem;
+    padding: 0 1.5rem;
     background: var(--bt-grad-default);
     color: var(--color1);
     font-weight: 500;
     border-radius: 1.5rem;
     border: var(--bt-border-default);
     font-size: 1.5rem;
+}
+
+main .projects .project .project-buttons div button:hover {
+    border: var(--bt-border-hover);
 }
 
 main .education .course {
@@ -389,7 +439,6 @@ main .contacts {
     flex-direction: column;
     align-items: center;
     background: var(--bg-deg-alt-v);
-    padding-bottom: 2rem;
 }
 
 main .contacts .contact-info {
@@ -404,8 +453,8 @@ main .contacts .contact-info {
     background-image: url('../img/contact/markus-winkler-q3QPw37J6Xs-unsplash.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(255,255,255,0.80);
-    background-blend-mode: lighten;
+    background-color: var(--bg-border1);
+    background-blend-mode: var(--blend-mode);
 }
 
 main .contacts .contact-info a {
@@ -418,6 +467,20 @@ main .contacts .contact-info a {
 main .contacts .contact-info a span{
     margin-left: 0.5rem;
     overflow-wrap: break-word;
+    color: var(--color3);
+    background-color: var(--bg-color1-alpha);
+    background-blend-mode: var(--blend-mode);
+    border: solid 1px transparent;
+    border-radius: 0.8rem;
+    padding: 0.5rem 1rem;
+}
+
+main .contacts .contact-info a img {
+    background-color: var(--bg-color1-alpha);
+    background-blend-mode: var(--blend-mode);
+    border: solid 1px transparent;
+    padding: 0.5rem 0.5rem;
+    border-radius: 1.2rem;
 }
 
 footer {
@@ -477,37 +540,48 @@ nav .section-nav .section-link img {
         flex-wrap: wrap;
         word-wrap: break-word;
         overflow-wrap: break-word;
+        padding: 0 10%;
     }
 
-    h1 {
-        font-size: 5rem;
-        line-height: 6rem;
+    h1, h1 > span {
+        margin-top: 0;
+        font-size: 4rem;
+        line-height: 4rem;
         font-family: 'League Spartan', 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
         letter-spacing: 0.2rem;
         width: 80%;
         text-align: center;
     }
 
+    h1 > span {
+        font-size: 5rem;
+        line-height: 7rem;
+    }
+
     h2 {
         font-family: 'League Spartan', 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
         font-size: 4rem;
-        line-height: 3rem;
+        line-height: 5rem;
         letter-spacing: 0.4rem;
         margin: 2rem 0;
+        align-self: center;
+        width: 100%;
     }
 
     h3, h4, h5, h6 {
         font-family: 'Instrument Sans';
         font-size: 1.5rem;
-        line-height: 2rem;
+        line-height: 3rem;
         letter-spacing: 5%;
+        align-self: center;
     }
 
     p {
-        font-size: 1.5rem;
-        line-height: 2rem;
+        font-size: 2rem;
+        line-height: 3rem;
         letter-spacing: 0.1rem;
         font-family: 'Source Serif 4';
+        padding: 2rem 0;
     }
 
     span {
@@ -517,6 +591,14 @@ nav .section-nav .section-link img {
         font-family: 'Source Serif 4';
     }
 
+    .pc {
+        display: block;
+    }
+
+    .phone {
+        display: none;
+    }
+
     nav .section-nav {
         top: 0px;
         left: 0px;
@@ -524,11 +606,12 @@ nav .section-nav .section-link img {
         width: 350px;
         height: 100%;
         border-top: none;
-        border-right: inline solid 1px var(--bg-border3);
+        border-right: solid 1px var(--bg-border3);
         justify-content: flex-start;
         align-items: flex-start;
         gap: 3vh;
         flex-wrap: nowrap;
+        z-index: 30;
     }
 
     nav .section-nav .section-link {
@@ -572,12 +655,18 @@ nav .section-nav .section-link img {
 
     header {
         display: grid;
-        grid-template-columns: 1fr 5fr 1fr;
-        height: 20vh;
-        grid-template-areas: "logoholder myname darkmode";
+        grid-template-columns: 2fr 5fr 2fr;
+        justify-content: center;
+        justify-items: center;
         align-items: center;
         align-content: center;
+        height: fit-content;
+        margin: 2rem 0;
+        grid-template-areas: "logoholder myname darkmode";
         background: transparent;
+        overflow: visible;
+        position: sticky;
+        background-color: var(--bg-color1);
     }
 
     header .logo-holder img {
@@ -587,25 +676,21 @@ nav .section-nav .section-link img {
 
     header .my-name {
         grid-area: "myname";
-        justify-content: center;
     }
 
     header .my-name span {
-        font-size: 8rem;
+        font-size: 8vh;
         letter-spacing: 0.6rem;
-        line-height: 8rem;
+        line-height: 6vh;
     }
 
     header .dark-mode-switch {
         grid-area: "darkmode";
-        position: relative;
-        justify-self: flex-end;
         display: flex;
-        align-items: center;
     }
 
     header .dark-mode-switch img {
-        width: 5vw;
+        height: 5vh;
     }
 
     footer {
@@ -616,10 +701,81 @@ nav .section-nav .section-link img {
     main > section {
         padding-left: 1rem;
         align-items: center;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    main > section h1,
+    main > section h2,
+    main > section h3 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    main .home {
+        padding-top: 1vh;
+        display: block; 
+        flex-direction: column;
+    }
+
+    main img {
+        width: 40%;
+    }
+
+    main .home h1 {
+        width: 100%;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    main .home h1 span {
+        text-align: center;
+    }
+
+    main .home > div {
+        width: 100%;
+        display: flow-root;
+    }
+
+    main .home > div p {
+        color: var(--color1);
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1.5rem; 
+    }
+
+    main .home > div p:last-child {
+    margin-bottom: 0;
+}
+
+    main .home > div div {
+        width: auto;
+    }
+
+    main .home > div img.pc {
+        float: left;
+        width: 30%;
+        border-radius: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    main .differential h2 {
+        font-size: 3rem;
+        line-height: 4rem;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        color: var(--highlight);
+    }
+
+    main .knowledge ul h3 {
+        align-self: flex-start;
+        padding-left: 20%;
     }
 
     main .knowledge ul li {
-        padding-left: 3rem;
+        padding-left: 20%;
     }
 
     main .knowledge ul li img {
@@ -656,10 +812,15 @@ nav .section-nav .section-link img {
         width: 30%;
     }
 
+    main .projects .project .presentation div p {
+        padding: 0px;
+    }
+
     main .projects .project .presentation div .details ul li {
-        font-size: 1.2rem;
+        font-size: 2.0rem;
         align-self: flex-start;
-        color: var(--color3);
+        color: var(--color1);
+        line-height: 2.5rem;
     }
 
     main .projects .project .presentation .details {
@@ -678,6 +839,7 @@ nav .section-nav .section-link img {
     main .projects .project .presentation .details .pc {
         display: inline-block;
         width: 80%;
+        align-self: center;
     }
 
     main .projects .project .presentation .phone {
@@ -709,8 +871,8 @@ nav .section-nav .section-link img {
         font-size: 2rem;
     }
 
-    main .contacts .contact-info {
-
+    main .contacts {
+        padding-bottom: 6vh;
     }
 
     main .contacts .contact-info {
