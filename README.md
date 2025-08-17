@@ -1,7 +1,7 @@
 # Portfólio Pessoal - Marcelo Machado
 Bem-vindo ao meu portfólio pessoal. Este projeto foi criado para apresentar minha jornada, habilidades e projetos como desenvolvedor Front End. A página é funcional, totalmente responsiva e reflete minha paixão por criar soluções de tecnologia eficientes e com ótima experiência de usuário (UX).
 
-[Clique aqui para ver a demonstração ao vivo](maxadobr.github.io](https://maxadobr.github.io/)
+[Clique aqui para ver a demonstração ao vivo](https://maxadobr.github.io/)
 
 Uma prévia do layout do portfólio em modo escuro.
 
