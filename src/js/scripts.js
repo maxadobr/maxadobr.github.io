@@ -17,10 +17,17 @@ function changeTheme() {
     const newTheme = currentTheme === "dark" ? "light" : "dark";
 
     rootHtml.setAttribute("data-theme", newTheme);
+    localStorage.setItem('theme', newTheme);
     updateIcons(newTheme);
 }
 
 function initializeTheme() {
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme) {
+        rootHtml.setAttribute('data-theme', savedTheme);
+    }
+
     const currentTheme = rootHtml.getAttribute("data-theme");
     updateIcons(currentTheme);
 }
