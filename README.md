@@ -59,9 +59,9 @@ A estrutura de diretórios foi organizada para manter o código limpo e modular.
 ├── index.html/
 └── src/
     ├── css/
-    │   ├── normalize.css\
-    │   └── style.css\
-    ├── js/\
+    │   ├── normalize.css
+    │   └── style.css
+    ├── js/
     │   └── scripts.js
     └── img/
         ├── contact/
