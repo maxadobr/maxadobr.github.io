@@ -31,7 +31,7 @@ body {
     --bg-border3: #ACC9CF;
     --color3: #1C2227;
     --logo-blue: #00BFFF;
-    --highlight: #92E9EF;
+    --highlight: #0896a0;
     --highlight-alpha: #92E9EF60;
     --highlight-border: #7BC6E2;
     --highlight-color: #331814;
@@ -662,7 +662,7 @@ nav .section-nav .section-link img {
         align-items: center;
         align-content: center;
         height: fit-content;
-        margin: 2rem 0;
+        margin: 0.5rem 0;
         grid-template-areas: "logoholder myname darkmode";
         background: transparent;
         overflow: visible;
@@ -700,7 +700,6 @@ nav .section-nav .section-link img {
     }
 
     main > section {
-        padding-left: 1rem;
         align-items: center;
         padding-left: 15%;
         padding-right: 15%;
@@ -714,7 +713,8 @@ nav .section-nav .section-link img {
     }
 
     main .home {
-        padding-top: 1vh;
+        margin-top: 0;
+        padding-top: 0.5rem;
         display: block; 
         flex-direction: column;
     }

@@ -1,0 +1,203 @@
+{
+  "name": "Marcelo Machado",
+  "photo": "https://avatars.githubusercontent.com/u/150363449?s=400&u=34f160a844d59410427c758edfa7931e4a559f01&v=4",
+  "title": "Desenvolvedor Front-End | JavaScript, HTML, CSS | Experiência em Gestão e Execução de Projetos Industriais",
+  "location": "Brasil",
+  "contact": [
+    {
+      "social": "E-mail",
+      "address": "maxado.mdx@gmail.com"
+    },
+    {
+      "social": "LinkedIn",
+      "address": "https://www.linkedin.com/in/maxadobr/"
+    },
+    {
+      "social": "GitHub",
+      "address": "https://github.com/maxadobr"
+    }
+  ],
+
+  "skills": {
+    "hardSkills": [
+      {
+        "icon-source": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/",
+        "icon-extension": ".png",
+        "icon-source-2": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/",
+        "icon-extension-2": ".svg"
+      },
+      {
+        "name": "figma",
+        "logo": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/figma.png"
+      },
+      {
+        "name": "html",
+        "logo": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png"
+      },
+      {
+        "name": "css",
+        "logo": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png"
+      },
+      {
+        "name": "javascript",
+        "logo": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png"
+      },
+      {
+        "name": "bootstrap",
+        "logo": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bootstrap.png"
+      },
+      {
+        "name": "sqlite",
+        "logo": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/sqlite.png"
+      },
+      {
+        "name": "python",
+        "logo": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/python.png"
+      },
+      {
+        "name": "git",
+        "logo": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/git.png"
+      },
+      {
+        "name": "github",
+        "logo": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/github.png"
+      },
+      {
+        "name": "bash",
+        "logo": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bash.png"
+      },
+      {
+        "name": "docker",
+        "logo": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/docker.png"
+      },
+      {
+        "name": "windows",
+        "logo": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/windows.png"
+      },
+      {
+        "name": "linux",
+        "logo": "https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/linux.png"
+      }
+    ],
+    "softSkills": [
+      "Comunicação",
+      "Resolução de Problemas",
+      "Organização",
+      "Adaptável",
+      "Aprendizagem Rápida"
+    ]
+  },
+  "languages": [
+    {
+      "lang": "Português",
+      "level": "Nativo"
+    },
+    {
+      "lang": "Inglês",
+      "level": "Avançado"
+    },
+    {
+      "lang": "Alemão",
+      "level": "Iniciante"
+    }
+  ],
+  "education": [
+    {
+      "course": "Santander Open Academy - Front-End",
+      "description": "Estruturas de páginas web com HTML, estilização e responsividade com CSS, aprofundando em Flexbox e Grid. JavaScript para interatividade, trabalhos com API e requisições assíncronas.",
+      "institution": "Digital Innovation One (DIO)",
+      "duration": "102h",
+      "period": {
+        "start": "06/2025",
+        "finish": "08/2025"
+      },
+      "certifications": [
+        {
+          "nome": "Curso: Santander 2025 - Front-End",
+          "link": "https://www.dio.me/certificate/DIM8P0AA/share"
+        }
+      ]
+    },
+    {
+      "course": "Introdução à Ciência da Computação",
+      "description": "Uma introdução às atividades intelectuais da ciência da computação e à arte da programação.",
+      "institution": "Harvard university (edX)",
+      "period": {
+        "start": "04/2025",
+        "finish": "Atualmente"
+      }
+    },
+    {
+      "course": "Bacharelado em Engenharia de Software",
+      "description": "",
+      "institution": "UniCesumar",
+      "period": {
+        "start": "05/2025",
+        "finish": "04/2029"
+      }
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Pokedex Web",
+      "description": "",
+      "url": "https://github.com/maxadobr/js-developer-pokedex",
+      "code": "github",
+      "page": "github"
+    },
+    {
+      "name": "Yugioh Game",
+      "description": "",
+      "url": "https://github.com/maxadobr/js-yugioh",
+      "code": "github",
+      "page": "github"
+    },
+    {
+      "name": "Static Portfolio",
+      "description": "",
+      "url": "https://github.com/maxadobr/maxadobr.github.io",
+      "code": "github",
+      "page": "github"
+    },
+    {
+      "name": "Discord Home Page Clone",
+      "description": "",
+      "url": "https://github.com/maxadobr/discord-clone-responsivo-css-dio",
+      "code": "github",
+      "page": "github"
+    },
+    {
+      "name": "Youtube Clone",
+      "description": "",
+      "url": "https://github.com/maxadobr/youtube-clone-css-dio",
+      "code": "github",
+      "page": "github"
+    }
+  ],
+  "experiences": [
+    {
+      "position": "Autônomo",
+      "company": "Prestação de Serviços – Projetos e Soluções",
+      "period": {
+        "start": "05/2024",
+        "finish": "Hoje"
+      }
+    },
+    {
+      "position": "Madox - Autopeças em Borracha ME",
+      "company": "Analista de Operações Industriais",
+      "period": {
+        "start": "09/2021",
+        "finish": "01/2024"
+      }
+    },
+    {
+      "position": "Desenvolvedor de produtos",
+      "company": "Neobor - Indústria de Artefatos de Borracha Ltda",
+      "period": {
+        "start": "04/2017",
+        "finish": "04/2021"
+      }
+    }
+  ]
+}
