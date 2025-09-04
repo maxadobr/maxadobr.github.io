@@ -221,29 +221,37 @@ header .dark-mode-switch {
 }
 
 header .dark-mode-switch img {
-    height: 5vh;
+    height: 40%;
 }
 
 header .logo-holder {
     grid-area: logoholder;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 header .logo-holder img {
-    width: 6rem;
+    width: 70%;
 }
 
 main {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
     min-width: 300px;
     background-color: var(--bg-color1);
 }
 
 main > section {
-    padding: 2rem 0;
     text-wrap: wrap;
     flex-wrap: wrap;
     overflow-wrap: break-word;
+}
+
+main > section p {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 main .home {
@@ -360,6 +368,10 @@ main .projects {
     padding: 0 5vw;
 }
 
+main .projects h2 {
+    align-self: center;
+}
+
 main .projects .project {
     display: flex;
     flex-direction: column;
@@ -383,6 +395,7 @@ main .projects .project .details {
 
 main .projects .project .details ul li {
     list-style: inside;
+    text-align: left;
 }
 
 main .projects .project img {
