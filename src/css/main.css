@@ -1,21 +1,6 @@
 @import url('./normalize.css');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=League+Spartan:wght@100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
-html,
-body {
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg-color1);
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 :root, :root[data-theme='light'] {
     --bg-color1: #f6fcfc;
     --bg-color1-alpha: #f6fcfc60;
@@ -31,7 +16,7 @@ body {
     --bg-border3: #ACC9CF;
     --color3: #1C2227;
     --logo-blue: #00BFFF;
-    --highlight: #0896a0;
+    --highlight: #0c8fcc;
     --highlight-alpha: #92E9EF60;
     --highlight-border: #7BC6E2;
     --highlight-color: #331814;
@@ -104,30 +89,22 @@ body {
     --blend-mode: exclusion;
 }
 
-* {
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     color: var(--color1);
     font-family: 'Source Serif 4', Georgia, 'Times New Roman', Times, serif;
 }
 
-h1, h1 > span {
-    font-family: 'League Spartan', 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 2rem;
-    letter-spacing: 5%;
-    line-height: 2rem;
-    font-weight: 600;
-    color: var(--color1);
-    padding: 0 1rem;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-h1 > span {
-    color: var(--blue-fg-title);
+html {
+    background-color: var(--bg-color1);
+    margin: auto;
 }
 
 h2 {
     font-family: 'League Spartan';
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     letter-spacing: 5%;
     font-weight: 600;
     color: var(--blue-fg-title);
@@ -146,6 +123,18 @@ h3, h4, h5, h6 {
     color: var(--blue-fg-title);
     text-transform: uppercase;
     text-decoration-line: underline;
+}
+
+h1, h1 > span {
+    font-family: 'League Spartan', 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 5%;
+    line-height: 2rem;
+    font-weight: 600;
+    color: var(--color1);
+    padding: 0 1rem;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 p {
@@ -170,6 +159,8 @@ a {
     text-decoration: none;
 }
 
+/* Components */
+
 .pc {
     display: none;
 }
@@ -181,47 +172,19 @@ a {
 
 header {
     display: grid;
-    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-columns: 1fr 5fr 1fr;
     grid-template-areas: "logoholder myname darkmode";
-    align-items: center;
+    align-items: flex-start;
     justify-items: center;
     background: var(--bg-deg-alt-v);
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0px;
     align-self: start;
     z-index: 20;
-    padding: 1rem 0;
+    padding: 1rem 0.2rem;
     border-bottom: solid 1px var(--bg-border3);
     height: fit-content;
-}
-
-header .my-name {
-    display: flex;
-    justify-content: center;
-    font-family: 'League Spartan';
-    color: var(--color1);
-    font-size: 1.5rem;
-    font-weight: 250;
-    letter-spacing: 0.2rem;
-    text-align: center;
-    padding: 0 0vw;
-}
-
-header .my-name {
-    grid-area: myname;
-}
-
-header .my-name span {
-    word-break: normal;
-}
-
-header .dark-mode-switch {
-    grid-area: darkmode;
-}
-
-header .dark-mode-switch img {
-    height: 40%;
 }
 
 header .logo-holder {
@@ -232,7 +195,51 @@ header .logo-holder {
 }
 
 header .logo-holder img {
-    width: 70%;
+    width: 80%;
+}
+
+header .my-name {
+    grid-area: myname;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 0 0;
+}
+
+header .my-name strong {
+    word-break: normal;
+    display: flex;
+    flex-direction: column;
+    font-family: 'League Spartan';
+    color: var(--color1);
+    font-size: 1.5rem;
+    font-weight: 250;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+header .my-name a {
+    display: inline-block;
+    align-self: flex-end;
+    height: fit-content;
+}
+
+header .my-name a small {
+    word-break: normal;
+    font-size: x-small;
+    color: var(--highlight-color);
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+}
+
+header .dark-mode-switch {
+    grid-area: darkmode;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+header .dark-mode-switch img {
+    width: 80%;
 }
 
 main {
@@ -247,21 +254,23 @@ main > section {
     text-wrap: wrap;
     flex-wrap: wrap;
     overflow-wrap: break-word;
+    display: flex;
 }
 
 main > section p {
     padding-left: 1rem;
     padding-right: 1rem;
-}
-
-main .home {
-    margin-top: 7rem;
-    display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    border: inset solid 5px var(--blue-fg-title);
-    border-left: none;
-    border-right: none;
+}
+
+.big-image {
+    border: solid 1px var(--bg-border2);
+}
+
+h1 > span {
+    display: inline-block;
+    color: var(--highlight);
 }
 
 main .home > div {
@@ -289,11 +298,10 @@ main .home div div p {
 main .socials {
     display: flex;
     justify-content: center;
-    margin: 1rem 0;
 }
 
 main .socials .socials-box {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1rem;
     display: flex;
     justify-content: space-evenly;
     gap: 1rem;
@@ -309,7 +317,7 @@ main .socials .socials-box {
 
 .socials-box a img {
     background-color: transparent;
-    width: 15vw;
+    width: 6vw;
     max-width: 64px;
 }
 
@@ -541,12 +549,7 @@ nav .section-nav .section-link img {
 }
 
 @media (min-width: 1100px) {
-    main, header {
-        padding-left: 350px
-    }
-
     * {
-        font-size: 1rem;
         line-height: 3.5rem;
     }
 
@@ -555,21 +558,6 @@ nav .section-nav .section-link img {
         word-wrap: break-word;
         overflow-wrap: break-word;
         padding: 0 10%;
-    }
-
-    h1, h1 > span {
-        margin-top: 0;
-        font-size: 4rem;
-        line-height: 4rem;
-        font-family: 'League Spartan', 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
-        letter-spacing: 0.2rem;
-        width: 80%;
-        text-align: center;
-    }
-
-    h1 > span {
-        font-size: 5rem;
-        line-height: 7rem;
     }
 
     h2 {
@@ -604,6 +592,28 @@ nav .section-nav .section-link img {
         letter-spacing: 0.1rem;
         font-family: 'Source Serif 4';
     }
+
+    /* Components */
+
+    h1, h1 > span {
+        margin-top: 0;
+        font-size: 4rem;
+        line-height: 4rem;
+        font-family: 'League Spartan', 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 0.2rem;
+        width: 80%;
+        text-align: center;
+    }
+
+    h1 > span {
+        font-size: 5rem;
+        line-height: 7rem;
+    }
+
+    main, header {
+        padding-left: 350px
+    }
+
 
     .pc {
         display: block;
@@ -654,26 +664,27 @@ nav .section-nav .section-link img {
     }
 
     nav .section-nav #side-logo {
-        display: block;
+        display: flex;
         align-self: center;
         height: auto;
-        width: 70%;
+        width: 40%;
         max-width: 256px;
-        padding-bottom: 5vh;
+        padding: 2rem 0;
+    }
+
+    nav .section-nav #side-logo {
+        width: 80%;
     }
 
     nav .section-nav .section-link .section-icon img {
         min-width: 32px;
-        height: auto;
     }
 
     header {
         display: grid;
-        grid-template-columns: 2fr 5fr 2fr;
-        justify-content: center;
+        grid-template-columns: 0fr 10fr 2fr;
+        justify-content: first baseline;
         justify-items: center;
-        align-items: center;
-        align-content: center;
         height: fit-content;
         margin: 0.5rem 0;
         grid-template-areas: "logoholder myname darkmode";
@@ -692,19 +703,26 @@ nav .section-nav .section-link img {
         grid-area: "myname";
     }
 
-    header .my-name span {
-        font-size: 8vh;
+    header .my-name strong {
+        font-size: 5rem;
         letter-spacing: 0.6rem;
         line-height: 6vh;
+    }
+
+    header .my-name a small {
+        font-size: 2.5vh;
+        letter-spacing: 0.3rem;
     }
 
     header .dark-mode-switch {
         grid-area: "darkmode";
         display: flex;
+        align-self: first baseline;
+        padding-top: 1rem;
     }
 
     header .dark-mode-switch img {
-        height: 5vh;
+        width: 5vw;
     }
 
     footer {
