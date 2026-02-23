@@ -5,147 +5,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxado Developer</title>
-    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/normalize.css">
+    <link rel="stylesheet" href="./src/css/global.css">
+    <link rel="stylesheet" href="./src/css/style.css">
     <link rel="shortcut icon" href="./src/img/favicon/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <div class="logo-holder">
+    <header class="site-header">
+        <div class="site-header__logo">
             <img src="./src/img/header/maxado-logo.svg" alt="">
         </div>
-        <div class="my-name">
-            <strong id="header-name"></strong>
-            <a href="">
+        <div class="site-header__profile">
+            <strong id="header-name" class="site-header__profile-name"></strong>
+            <a href="" class="site-header__profile-handle">
                 <small id="header-username"></small>
             </a>
         </div>
-        <div id="toggleTheme" class="dark-mode-switch">
-            <img src="./src/img/header/switch_on.svg" alt="" class="theme-icon"
-                data-src-light="./src/img/header/switch_on.svg" data-src-dark="./src/img/header/switch_off.svg">
+        <div id="toggleTheme" class="site-header__theme-switch">
+            <i data-lucide="sun" class="theme-icon light-icon"></i>
+            <i data-lucide="moon" class="theme-icon dark-icon"></i>
         </div>
     </header>
-    <main>
-        <section id="s1" class="home">
+    <main class="main-content">
+        <section id="s1" class="section-block home-section">
             <h1 id="home-title"></h1>
-            <div id="home-description">
-                <img class="big-image paquimeter pc" src="./src/img/home/paquimeter-pc.jpg" alt="">
-                <img class="big-image paquimeter phone" src="./src/img/home/paquimeter-phone.jpg" alt="">
+            <div id="home-description" class="home-section__content">
+                <img class="home-section__image pc" src="./src/img/home/paquimeter-pc.jpg" alt="">
+                <img class="home-section__image phone" src="./src/img/home/paquimeter-phone.jpg" alt="">
             </div>
         </section>
-        <section class="socials">
+        <section class="socials-section">
             <div class="socials-box">
                 <a href="https://www.linkedin.com/in/maxadobr/">
-                    <img src="./src/img/contact/l-linkedin.svg" class="theme-icon"
-                        data-src-light="./src/img/contact/l-linkedin.svg"
-                        data-src-dark="./src/img/contact/d-linkedin.svg">
+                    <i data-lucide="linkedin" class="theme-icon"></i>
                 </a>
                 <a href="https://github.com/maxadobr">
-                    <img src="./src/img/contact/l-github.svg" class="theme-icon"
-                        data-src-light="./src/img/contact/l-github.svg" data-src-dark="./src/img/contact/d-github.svg">
+                    <i data-lucide="github" class="theme-icon"></i>
                 </a>
                 <a target="_blank" href="https://www.instagram.com/maxadobr/">
-                    <img src="./src/img/contact/l-instagram.svg" class="theme-icon"
-                        data-src-light="./src/img/contact/l-instagram.svg"
-                        data-src-dark="./src/img/contact/d-instagram.svg">
+                    <i data-lucide="instagram" class="theme-icon"></i>
                 </a>
             </div>
         </section>
-        <section id="s2" class="differential">
+        <section id="s2" class="section-block section-block--alt-bg differential-section">
             <h2 id="differential-title"></h2>
-            <div id="differential-description">
+            <div id="differential-description" class="home-section__content">
             </div>
         </section>
-        <section id="s3" class="knowledge">
+        <section id="s3" class="section-block list-section">
             <h2 id="knowledge-title"></h2>
             <div id="knowledge-container">
             </div>
         </section>
-        <section id="s4" class="projects">
+        <section id="s4" class="section-block section-block--alt-bg projects-section">
             <h2 id="projects-title"></h2>
-            <p id="projects-description"></p>
+            <p id="projects-description" class="section-block__text"></p>
             <div id="projects-container">
             </div>
         </section>
-        <section id="s5" class="education">
+        <section id="s5" class="section-block list-section">
             <h2 id="education-title"></h2>
             <div id="education-container">
             </div>
         </section>
-        <section id="s-exp" class="experience">
+        <section id="s-exp" class="section-block list-section">
             <h2 id="experience-title"></h2>
             <div id="experience-container">
             </div>
         </section>
-        <section id="s6" class="contacts">
+        <section id="s6" class="section-block section-block--alt-bg contacts-section">
             <h2 id="contacts-title"></h2>
-            <article class="contact-info" id="contacts-container">
+            <article class="contact-card" id="contacts-container">
             </article>
         </section>
-        <footer>
-            <p id="footer-text"></p>
+        <footer class="site-footer">
+            <p id="footer-text" class="site-footer__text"></p>
         </footer>
     </main>
     <nav>
-        <section class="section-nav">
-            <img id="side-logo" src="./src/img/header/maxado-logo.svg" alt="">
-            <a class="section-link" href="#">
-                <div class="section-icon">
-                    <img src="./src/img/nav/l-home-icon.svg" alt="" class="theme-icon"
-                        data-src-light="./src/img/nav/l-home-icon.svg" data-src-dark="./src/img/nav/d-home-icon.svg">
-                </div>
-                <span id="nav-home"></span>
-            </a>
-            <a class="section-link" href="#s2">
-                <div class="section-icon">
-                    <img src="./src/img/nav/l-differential-icon.svg" alt="" class="theme-icon"
-                        data-src-light="./src/img/nav/l-differential-icon.svg"
-                        data-src-dark="./src/img/nav/d-differential-icon.svg">
-                </div>
-                <span id="nav-differential"></span>
-            </a>
-            <a class="section-link" href="#s3">
-                <div class="section-icon">
-                    <img src="./src/img/nav/l-knowledge-icon.svg" alt="" class="theme-icon"
-                        data-src-light="./src/img/nav/l-knowledge-icon.svg"
-                        data-src-dark="./src/img/nav/d-knowledge-icon.svg">
-                </div>
-                <span id="nav-knowledge"></span>
-            </a>
-            <a class="section-link" href="#s4">
-                <div class="section-icon">
-                    <img src="./src/img/nav/l-projects-icon.svg" alt="" class="theme-icon"
-                        data-src-light="./src/img/nav/l-projects-icon.svg"
-                        data-src-dark="./src/img/nav/d-projects-icon.svg">
-                </div>
-                <span id="nav-projects"></span>
-            </a>
-            <a class="section-link" href="#s5">
-                <div class="section-icon">
-                    <img src="./src/img/nav/l-education-icon.svg" alt="" class="theme-icon"
-                        data-src-light="./src/img/nav/l-education-icon.svg"
-                        data-src-dark="./src/img/nav/d-education-icon.svg">
-                </div>
-                <span id="nav-education"></span>
-            </a>
-            <a class="section-link" href="#s-exp">
-                <div class="section-icon">
-                    <img src="./src/img/nav/l-education-icon.svg" alt="" class="theme-icon"
-                        data-src-light="./src/img/nav/l-education-icon.svg"
-                        data-src-dark="./src/img/nav/d-education-icon.svg">
-                </div>
-                <span id="nav-experience">Experiência</span>
-            </a>
-            <a class="section-link" href="#s6">
-                <div class="section-icon">
-                    <img src="./src/img/nav/l-contact-icon.svg" alt="" class="theme-icon"
-                        data-src-light="./src/img/nav/l-contact-icon.svg"
-                        data-src-dark="./src/img/nav/d-contact-icon.svg">
-                </div>
-                <span id="nav-contact"></span>
-            </a>
+        <section class="bottom-nav">
+            <img id="side-logo" class="bottom-nav__logo" src="./src/img/header/maxado-logo.svg" alt="">
+            <div class="bottom-nav__item" data-target="home">
+                <a class="bottom-nav__link section-link" href="#">
+                    <div class="bottom-nav__icon-box">
+                        <i data-lucide="home" class="theme-icon"></i>
+                    </div>
+                    <span id="nav-home" class="bottom-nav__text"></span>
+                </a>
+            </div>
+            <div class="bottom-nav__item" data-target="s2">
+                <a class="bottom-nav__link section-link" href="#s2">
+                    <div class="bottom-nav__icon-box">
+                        <i data-lucide="sparkles" class="theme-icon"></i>
+                    </div>
+                    <span id="nav-differential" class="bottom-nav__text"></span>
+                </a>
+            </div>
+            <div class="bottom-nav__item has-subnav" data-target="s3">
+                <a class="bottom-nav__link section-link" href="#s3">
+                    <div class="bottom-nav__icon-box">
+                        <i data-lucide="code" class="theme-icon"></i>
+                    </div>
+                    <span id="nav-knowledge" class="bottom-nav__text"></span>
+                </a>
+                <div class="sub-nav" id="subnav-s3"></div>
+            </div>
+            <div class="bottom-nav__item has-subnav" data-target="s4">
+                <a class="bottom-nav__link section-link" href="#s4">
+                    <div class="bottom-nav__icon-box">
+                        <i data-lucide="folder-git-2" class="theme-icon"></i>
+                    </div>
+                    <span id="nav-projects" class="bottom-nav__text"></span>
+                </a>
+                <div class="sub-nav" id="subnav-s4"></div>
+            </div>
+            <div class="bottom-nav__item has-subnav" data-target="s5">
+                <a class="bottom-nav__link section-link" href="#s5">
+                    <div class="bottom-nav__icon-box">
+                        <i data-lucide="graduation-cap" class="theme-icon"></i>
+                    </div>
+                    <span id="nav-education" class="bottom-nav__text"></span>
+                </a>
+                <div class="sub-nav" id="subnav-s5"></div>
+            </div>
+            <div class="bottom-nav__item has-subnav" data-target="s-exp">
+                <a class="bottom-nav__link section-link" href="#s-exp">
+                    <div class="bottom-nav__icon-box">
+                        <i data-lucide="briefcase" class="theme-icon"></i>
+                    </div>
+                    <span id="nav-experience" class="bottom-nav__text">Experiência</span>
+                </a>
+                <div class="sub-nav" id="subnav-s-exp"></div>
+            </div>
+            <div class="bottom-nav__item" data-target="s6">
+                <a class="bottom-nav__link section-link" href="#s6">
+                    <div class="bottom-nav__icon-box">
+                        <i data-lucide="mail" class="theme-icon"></i>
+                    </div>
+                    <span id="nav-contact" class="bottom-nav__text"></span>
+                </a>
+            </div>
         </section>
     </nav>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script src="./src/js/scripts.js"></script>
 </body>
 

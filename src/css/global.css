@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=League+Spartan:wght@100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+:root,
+:root[data-theme='light'] {
+    --bg-color1: #f6fcfc;
+    --bg-color1-alpha: #f6fcfc60;
+    --bg-color1-alt: #ebf6f8;
+    --bg-border1: #181A1D;
+    --color1: #1D2226;
+    --bg-color2: #BFDAE0;
+    --bg-color2-alpha: #BFDAE060;
+    --bg-border2: #A0BDCF;
+    --color2: #13161C;
+    --bg-color3: #D4EAE9;
+    --bg-color3-alpha: #D4EAE960;
+    --bg-border3: #ACC9CF;
+    --color3: #1C2227;
+    --logo-blue: #00BFFF;
+    --highlight: #0c8fcc;
+    --highlight-alpha: #92E9EF60;
+    --highlight-border: #7BC6E2;
+    --highlight-color: #331814;
+    --blue-fg-title: #16334E;
+    --bt-grad-default: linear-gradient(180deg, var(--bg-color1), var(--bg-color3));
+    --bt-grad-selected: linear-gradient(180deg, var(--bg-color1), var(--bg-color3));
+    --bt-border-default: solid 1px transparent;
+    --bt-border-hover: solid 3px rgba(164, 219, 233, 0.671);
+    --bt-border-selected: solid 1px rgba(198, 206, 231, 0.5);
+    --bg-deg-alt-v: linear-gradient(180deg, var(--bg-color1) 0%, var(--bg-color1-alt) 3%, var(--bg-color1-alt) 97%, var(--bg-color1) 100%);
+    --bg-deg-alt-h: linear-gradient(90deg, var(--bg-color1) 0%, var(--bg-color1-alt) 3%, var(--bg-color1-alt) 97%, var(--bg-color1) 100%);
+    --blend-mode: lighten;
+}
+
+:root[data-theme='dark'] {
+    --bg-color1: #2A2929;
+    --bg-color1-alpha: #2a292960;
+    --bg-color1-alt: #363636;
+    --bg-border1: #4d4b4b;
+    --color1: #D5DEE3;
+    --bg-color2: #3B4B53;
+    --bg-color2-alpha: #3B4B5360;
+    --bg-border2: #657B7D;
+    --color2: #F5F3E4;
+    --bg-color3: #486061;
+    --bg-color3-alpha: #48606160;
+    --bg-border3: #6F8886;
+    --color3: #FBF8F0;
+    --logo-blue: #00BFFF;
+    --highlight: #73D2D5;
+    --highlight-alpha: #73D2D560;
+    --highlight-border: #A2DBD9;
+    --highlight-color: #2F211D;
+    --blue-fg-title: #64bbd1;
+    --bt-grad-default: linear-gradient(180deg, var(--bg-color1), var(--bg-color3));
+    --bt-grad-selected: linear-gradient(180deg, var(--bg-color1), var(--bg-color3));
+    --bt-border-default: solid 1px transparent;
+    --bt-border-hover: solid 1px rgba(164, 219, 233, 0.671);
+    --bt-border-selected: solid 1px rgba(198, 206, 231, 0.5);
+    --bg-deg-alt-v: linear-gradient(180deg, var(--bg-color1) 0%, var(--bg-color1-alt) 3%, var(--bg-color1-alt) 97%, var(--bg-color1) 100%);
+    --bg-deg-alt-h: linear-gradient(90deg, var(--bg-color1) 0%, var(--bg-color1-alt) 3%, var(--bg-color1-alt) 97%, var(--bg-color1) 100%);
+    --blend-mode: exclusion;
+}
+
+/* ==========================================================================
+   Base Elements
+   ========================================================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    color: var(--color1);
+    font-family: 'Source Serif 4', Georgia, 'Times New Roman', Times, serif;
+}
+
+html {
+    background-color: var(--bg-color1);
+    margin: auto;
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+h1,
+h1>span {
+    font-family: 'League Spartan', 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 5%;
+    line-height: 2rem;
+    font-weight: 600;
+    color: var(--color1);
+    padding: 0 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1>span {
+    display: inline-block;
+    color: var(--highlight);
+}
+
+h2 {
+    font-family: 'League Spartan';
+    font-size: 1.5rem;
+    letter-spacing: 5%;
+    font-weight: 600;
+    color: var(--blue-fg-title);
+    margin-bottom: 0;
+    padding: 1.5rem 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Instrument Sans';
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 0 0.5rem;
+    text-align: left;
+    color: var(--blue-fg-title);
+    text-transform: uppercase;
+    text-decoration-line: underline;
+}
+
+p {
+    font-family: 'Source Serif 4';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Global Utilities
+   ========================================================================== */
+.pc {
+    display: none;
+}
+
+.phone {
+    display: block;
+}
+
+.big-image {
+    border: solid 1px var(--bg-border2);
+}
+
+html[data-theme='light'] .dark-icon {
+    display: none !important;
+}
+
+html[data-theme='light'] .light-icon {
+    display: block !important;
+}
+
+html[data-theme='dark'] .light-icon {
+    display: none !important;
+}
+
+html[data-theme='dark'] .dark-icon {
+    display: block !important;
+}
+
+/* ==========================================================================
+   Typography Media Queries
+   ========================================================================== */
+@media (min-width: 1100px) {
+    * {
+        line-height: 3.5rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        flex-wrap: wrap;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        padding: 0 10%;
+    }
+
+    h1,
+    h1>span {
+        margin-top: 0;
+        font-size: 4rem;
+        line-height: 4rem;
+        letter-spacing: 0.2rem;
+        width: 80%;
+        text-align: center;
+    }
+
+    h1>span {
+        font-size: 5rem;
+        line-height: 7rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+        letter-spacing: 0.4rem;
+        margin: 2rem 0;
+        align-self: center;
+        width: 100%;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+
+    p {
+        font-size: 2rem;
+        line-height: 3rem;
+        letter-spacing: 0.1rem;
+        padding: 2rem 0;
+    }
+
+    span {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .pc {
+        display: block;
+    }
+
+    .phone {
+        display: none;
+    }
+}

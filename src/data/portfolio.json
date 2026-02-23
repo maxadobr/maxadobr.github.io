@@ -208,20 +208,6 @@
                 ]
             },
             {
-                "name": "Discord Page Clone",
-                "description": "Página inicial antiga do Discord.",
-                "type": "Website Clone",
-                "imagePc": "./src/img/projects/discord-clone-pc-pc.png",
-                "imagePhone": "./src/img/projects/discord-clone-phone-pc.png",
-                "phoneMockupPc": "./src/img/projects/discord-clone-pc-phone.png",
-                "phoneMockupPhone": "./src/img/projects/discord-clone-phone-phone.png",
-                "repository": "https://github.com/maxadobr/discord-clone-responsivo-css-dio",
-                "demoUrl": "https://maxadobr.github.io/discord-clone-responsivo-css-dio/",
-                "features": [
-                    "Design responsivo"
-                ]
-            },
-            {
                 "name": "Portfólio",
                 "description": "Portfólio pessoal para mostrar projetos e estudos recentes.",
                 "type": "Website - Personal Portfolio",
@@ -316,20 +302,17 @@
         "contacts": [
             {
                 "url": "https://www.linkedin.com/in/maxadobr/",
-                "iconLight": "./src/img/contact/l-linkedin.svg",
-                "iconDark": "./src/img/contact/d-linkedin.svg",
+                "lucide": "linkedin",
                 "text": "linkedin.com/in/maxadobr"
             },
             {
                 "url": "https://github.com/maxadobr",
-                "iconLight": "./src/img/contact/l-github.svg",
-                "iconDark": "./src/img/contact/d-github.svg",
+                "lucide": "github",
                 "text": "github.com/maxadobr"
             },
             {
                 "url": "https://www.instagram.com/maxadobr/",
-                "iconLight": "./src/img/contact/l-instagram.svg",
-                "iconDark": "./src/img/contact/d-instagram.svg",
+                "lucide": "instagram",
                 "text": "instagram.com/maxadobr"
             }
         ],
@@ -667,20 +650,17 @@
         "contacts": [
             {
                 "url": "https://www.linkedin.com/in/maxadobr/",
-                "iconLight": "./src/img/contact/l-linkedin.svg",
-                "iconDark": "./src/img/contact/d-linkedin.svg",
+                "lucide": "linkedin",
                 "text": "linkedin.com/in/maxadobr"
             },
             {
                 "url": "https://github.com/maxadobr",
-                "iconLight": "./src/img/contact/l-github.svg",
-                "iconDark": "./src/img/contact/d-github.svg",
+                "lucide": "github",
                 "text": "github.com/maxadobr"
             },
             {
                 "url": "https://www.instagram.com/maxadobr/",
-                "iconLight": "./src/img/contact/l-instagram.svg",
-                "iconDark": "./src/img/contact/d-instagram.svg",
+                "lucide": "instagram",
                 "text": "instagram.com/maxadobr"
             }
         ],
