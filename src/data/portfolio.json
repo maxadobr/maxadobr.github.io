@@ -1,0 +1,689 @@
+{
+    "pt-BR": {
+        "header": {
+            "name": "Marcelo Machado",
+            "username": "@maxadobr"
+        },
+        "nav": {
+            "home": "Home",
+            "differential": "Diferencial",
+            "knowledge": "Habilidades",
+            "projects": "Projetos",
+            "education": "Formação",
+            "contact": "Contato"
+        },
+        "home": {
+            "title": "Estagiário com quase <span>DEZ anos de experiência!?</span>",
+            "paragraphs": [
+                "Sou um Desenvolvedor Web cursando Engenharia de Software, com uma vasta experiência como desenvolvedor de produtos e projetista, trazendo soluções e buscando desafios.",
+                "É pela busca por maiores desafios que agora busco aplicar o que aprendi no desenvolvimento e solução de problemas na indústria, para a tecnologia.",
+                "Busco uma oportunidade de estágio em Web/Front-End para aprender, contribuir e dar meus primeiros passos na minha carreira em tecnologia."
+            ]
+        },
+        "aboutMe": {
+            "professionalSummary": "Estudante de Engenharia de Software e Desenvolvedor Web em formação, em busca de uma oportunidade de estágio em tecnologia. Desde 2017, incorporei a resolução de problemas complexos, gestão de projetos e otimização de sistemas na minha rotina. Agora direciono essas habilidades para soluções de software eficientes, impulsionado por uma forte experiência com IA para aprendizado acelerado, revisão de código e prototipagem rápida.",
+            "objective": "Aplicar o conhecimento em desenvolvimento web para ganhar experiência prática e contribuir com uma equipe.",
+            "keyTechnologies": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "Python",
+                "SQL",
+                "Git",
+                "Linux",
+                "IA Generativa (Claude, Gemini, GPT)"
+            ]
+        },
+        "differential": {
+            "title": "Meu Diferencial: Do Desenvolvimento de Produtos, ao Desenvolvimento de Software",
+            "paragraphs": [
+                "Desenvolvimento e tecnologia fazem parte da minha jornada desde que comecei a trabalhar como desenhista 2D com AutoCAD. Eu apenas reproduzia e fazia simulações para as equipes de vendas e desenvolvimento, porém sempre me peguei pensando em coisas que poderiam ser feitas de maneira mais eficazes e/ou que trouxessem maior satisfação ao cliente. Foi por este motivo que me tornei um Projetista.",
+                "Como projetista, consegui trazer grandes mudanças para os processos, atuando principalmente como desenvolvedor de novos produtos, e mediante a uma maior proximidade com os vendedores e clientes, desenvolvi grandes soluções para a empresa, que foram desde sistemas originais personalizados de controle de qualidade até novas técnicas para orçamento que aceleraram em até 500% o processo de desenvolvimento, trazendo até mesmo ganho de precisão.",
+                "Depois de alguns anos atuando na área dentro de fábricas, me esbarrei diversas vezes nas limitações e resistência à busca de inovações dentro setores que atuei, ao mesmo tempo que meu fascínio pelos softwares que faziam parte do meu dia-a-dia só aumentavam, fizeram virar os olhos ao setor que mais inova e se desafia na história recente. Tecnologia.",
+                "O desenvolvimento Web/Front-End para mim é uma oportunidade de buscar desafios maiores, um início de jornada para aprender e me desenvolver, fazendo parte de soluções que movem o mundo e tanto impactam nossas vidas todos os dias."
+            ]
+        },
+        "knowledge": {
+            "title": "Minhas Habilidades",
+            "categories": [
+                {
+                    "id": "front-end",
+                    "title": "Front End",
+                    "items": [
+                        {
+                            "icon": "./src/img/knowledge/frontend-javascript.svg",
+                            "text": "HTML5, CSS3, JavaScript"
+                        },
+                        {
+                            "icon": "./src/img/knowledge/frontend-accessibility.svg",
+                            "text": "Responsividade e Acessibilidade"
+                        },
+                        {
+                            "icon": "./src/img/knowledge/frontend-seo.svg",
+                            "text": "Consumo de API e SEO"
+                        }
+                    ]
+                },
+                {
+                    "id": "back-end",
+                    "title": "BACK END & BANCO DE DADOS",
+                    "items": [
+                        {
+                            "icon": "./src/img/knowledge/backend-python.svg",
+                            "text": "Python e Flask"
+                        },
+                        {
+                            "icon": "./src/img/knowledge/backend-sql.svg",
+                            "text": "SQL"
+                        },
+                        {
+                            "icon": "./src/img/knowledge/backend-algoritmos.svg",
+                            "text": "Algoritmos e Estrutura de Dados"
+                        }
+                    ]
+                },
+                {
+                    "id": "tools",
+                    "title": "FERRAMENTAS E METODOLOGIAS",
+                    "items": [
+                        {
+                            "icon": "./src/img/knowledge/ferramentas-git.svg",
+                            "text": "Git e Github"
+                        },
+                        {
+                            "icon": "./src/img/knowledge/ferramentas-tools.svg",
+                            "text": "Metodologia Ágil e Kanban"
+                        },
+                        {
+                            "icon": "./src/img/knowledge/ferramentas-jira.svg",
+                            "text": "Trello/Jira"
+                        },
+                        {
+                            "icon": "./src/img/knowledge/ferramentas-debian.svg",
+                            "text": "Linha de Comando e Administração de Sistemas"
+                        }
+                    ]
+                },
+                {
+                    "id": "languages",
+                    "title": "IDIOMAS",
+                    "items": [
+                        {
+                            "icon": "./src/img/knowledge/idiomas-portugues.svg",
+                            "text": "Português Brasileiro - Nativo"
+                        },
+                        {
+                            "icon": "./src/img/knowledge/idiomas-ingles.svg",
+                            "text": "Inglês Americano - Avançado"
+                        },
+                        {
+                            "icon": "./src/img/knowledge/idiomas-alemao.svg",
+                            "text": "Alemão - Básico"
+                        }
+                    ]
+                }
+            ]
+        },
+        "projectsSection": {
+            "title": "PROJETOS",
+            "description": "Aqui estão alguns dos projetos que desenvolvi para praticar e demonstrar minhas habilidades no desenvolvimento Front End. Serão adicionados com frequência novos projetos, especialmente originais, assim como atualização dos existentes com melhores práticas e conceitos aprendidos, o mesmo vale para este portfólio."
+        },
+        "projects": [
+            {
+                "name": "Clarity Board",
+                "description": "Web App de gerenciamento e priorização de tarefas, focado em ajudar o usuário a decidir quais tarefas executar primeiro.",
+                "type": "Web Application - Gerenciamento e Priorização de Tarefas",
+                "imagePc": "./assets/img/projects/clarityboard.png",
+                "imagePhone": "./assets/img/projects/clarityboard.png",
+                "phoneMockupPc": "./assets/img/projects/clarityboard.png",
+                "phoneMockupPhone": "./assets/img/projects/clarityboard.png",
+                "repository": "https://github.com/maxadobr/clarityboard",
+                "demoUrl": "https://maxadobr.github.io/clarityboard",
+                "status": "Em desenvolvimento",
+                "technologies": [
+                    "HTML5",
+                    "CSS3",
+                    "Vanilla JavaScript",
+                    "IndexedDB",
+                    "JSON"
+                ],
+                "features": [
+                    "Gerenciamento de projetos e tarefas",
+                    "Sistema de categorias personalizáveis",
+                    "Sistema dinâmico de pontuação e priorização",
+                    "Internacionalização i18n (Português e Inglês)",
+                    "Importação/Exportação de Dados JSON",
+                    "Armazenamento local com IndexedDB",
+                    "Interface limpa e minimalista"
+                ]
+            },
+            {
+                "name": "League of Building",
+                "description": "Projeto para compartilhar builds com amigos.",
+                "type": "Web Application - Gaming Tool",
+                "imagePc": "./src/img/projects/lob-pc-pc.png",
+                "imagePhone": "./src/img/projects/lob-phone-pc.png",
+                "phoneMockupPc": "./src/img/projects/lob-pc-phone.png",
+                "phoneMockupPhone": "./src/img/projects/lob-phone-phone.png",
+                "repository": "https://github.com/maxadobr/leagueofbuilding",
+                "demoUrl": "https://maxadobr.github.io/leagueofbuilding/",
+                "status": "Em desenvolvimento",
+                "technologies": [
+                    "HTML5",
+                    "CSS3",
+                    "JavaScript",
+                    "API Integration"
+                ],
+                "features": [
+                    "Utiliza a API Data Dragon (Riot Games)",
+                    "Adiciona e remove itens do arsenal",
+                    "Design mobile e PC (media queries)",
+                    "Next: Compartilhamento interativo"
+                ]
+            },
+            {
+                "name": "Pokedex",
+                "description": "Aplicação criada para exibir Pokémon e suas informações principais, consumindo dados diretamente da PokeAPI.",
+                "type": "Web Application - Entretenimento",
+                "imagePc": "./assets/img/projects/pokedex.png",
+                "imagePhone": "./assets/img/projects/pokedex.png",
+                "phoneMockupPc": "./assets/img/projects/pokedex.png",
+                "phoneMockupPhone": "./assets/img/projects/pokedex.png",
+                "repository": "https://github.com/maxadobr/js-developer-pokedex",
+                "demoUrl": "https://maxadobr.github.io/js-developer-pokedex",
+                "status": "Concluído",
+                "technologies": [
+                    "HTML5",
+                    "CSS3",
+                    "JavaScript",
+                    "Integração de API"
+                ],
+                "features": [
+                    "Modo Claro/Escuro",
+                    "Consumo da PokeAPI",
+                    "Listagem dinâmica de Pokémon",
+                    "Exibição de informações detalhadas",
+                    "Design responsivo",
+                    "Cartões interativos"
+                ]
+            },
+            {
+                "name": "Discord Page Clone",
+                "description": "Página inicial antiga do Discord.",
+                "type": "Website Clone",
+                "imagePc": "./src/img/projects/discord-clone-pc-pc.png",
+                "imagePhone": "./src/img/projects/discord-clone-phone-pc.png",
+                "phoneMockupPc": "./src/img/projects/discord-clone-pc-phone.png",
+                "phoneMockupPhone": "./src/img/projects/discord-clone-phone-phone.png",
+                "repository": "https://github.com/maxadobr/discord-clone-responsivo-css-dio",
+                "demoUrl": "https://maxadobr.github.io/discord-clone-responsivo-css-dio/",
+                "features": [
+                    "Design responsivo"
+                ]
+            },
+            {
+                "name": "Portfólio",
+                "description": "Portfólio pessoal para mostrar projetos e estudos recentes.",
+                "type": "Website - Personal Portfolio",
+                "imagePc": "./assets/img/projects/portfolio.png",
+                "imagePhone": "./assets/img/projects/portfolio.png",
+                "phoneMockupPc": "./assets/img/projects/portfolio.png",
+                "phoneMockupPhone": "./assets/img/projects/portfolio.png",
+                "repository": "https://github.com/maxadobr/maxadobr.github.io",
+                "demoUrl": "https://maxadobr.github.io",
+                "status": "Manutenção contínua",
+                "technologies": [
+                    "HTML5",
+                    "CSS3",
+                    "JavaScript"
+                ],
+                "features": [
+                    "Modo Escuro/Claro",
+                    "Design responsivo",
+                    "Exibição de projetos",
+                    "SEO para habilidades",
+                    "Links para redes sociais e GitHub"
+                ]
+            }
+        ],
+        "educationSection": {
+            "title": "Formação e Estudos"
+        },
+        "education": [
+            {
+                "course": "Engenharia de Software (4 anos)",
+                "institution": "UniCesumar",
+                "period": "05/2025 ~ 04/2029"
+            },
+            {
+                "course": "CS50x - Introdução à ciência da computação (250h)",
+                "institution": "Harvard University Online (edX)",
+                "period": "04/2025 ~ 12/2025"
+            },
+            {
+                "course": "Desenvolvimento Front End (102h)",
+                "institution": "Santander Open Academy (DIO)",
+                "period": "06/2025 ~ 08/2025"
+            },
+            {
+                "course": "React - A biblioteca para interfaces de usuário web e nativas",
+                "institution": "Documentação Oficial do React",
+                "period": "Início previsto: 02/2026"
+            }
+        ],
+        "experienceSection": {
+            "title": "Experiência Profissional"
+        },
+        "experience": [
+            {
+                "type": "Autônomo",
+                "company": "Marcelo Machado - Projetos e Soluções",
+                "role": "Consultor Autônomo",
+                "period": "05/2024 ~ Presente",
+                "responsibilities": [
+                    "Desenvolvimento de metodologias de trabalho e produtos, especificamente em borracha para as linhas automotiva e de construção, tornando processos mais rentáveis, eficientes e auditáveis.",
+                    "Facilitação da integração de novos funcionários ao processo produtivo por meio de documentação técnica robusta, simples e objetiva para o quadro de fábrica.",
+                    "Redução da probabilidade de erro humano através de sistemas."
+                ]
+            },
+            {
+                "type": "Contrato",
+                "company": "Madox - Autopeças em Borracha ME",
+                "role": "Analista de Operações",
+                "period": "09/2021 ~ 01/2024",
+                "responsibilities": [
+                    "Desenvolvimento de produtos de acordo com as necessidades do mercado.",
+                    "Observação de tendências no mercado de reposição automotiva.",
+                    "Elaboração de fichas técnicas e desenhos técnicos.",
+                    "Planejamento, controle de produção e custeio."
+                ]
+            },
+            {
+                "type": "Contrato",
+                "company": "Neobor - Indústria de Artefatos de Borracha Ltda",
+                "role": "Desenvolvedor de Produto",
+                "period": "04/2017 ~ 04/2021",
+                "responsibilities": [
+                    "Desenvolvimento de itens e ferramentas para construção civil e linhas automotivas.",
+                    "Elaboração de fichas técnicas e desenhos para desenvolvimento, produção e controle de qualidade.",
+                    "Cálculos e projeções para orçamentos de produtos e logística."
+                ]
+            }
+        ],
+        "contactsSection": {
+            "title": "Contato"
+        },
+        "contacts": [
+            {
+                "url": "https://www.linkedin.com/in/maxadobr/",
+                "iconLight": "./src/img/contact/l-linkedin.svg",
+                "iconDark": "./src/img/contact/d-linkedin.svg",
+                "text": "linkedin.com/in/maxadobr"
+            },
+            {
+                "url": "https://github.com/maxadobr",
+                "iconLight": "./src/img/contact/l-github.svg",
+                "iconDark": "./src/img/contact/d-github.svg",
+                "text": "github.com/maxadobr"
+            },
+            {
+                "url": "https://www.instagram.com/maxadobr/",
+                "iconLight": "./src/img/contact/l-instagram.svg",
+                "iconDark": "./src/img/contact/d-instagram.svg",
+                "text": "instagram.com/maxadobr"
+            }
+        ],
+        "footer": "©  2025. Todos os direitos reservados. Marcelo Machado."
+    },
+    "en": {
+        "header": {
+            "name": "Marcelo Machado",
+            "username": "@maxadobr"
+        },
+        "nav": {
+            "home": "Home",
+            "differential": "Differential",
+            "knowledge": "Knowledge",
+            "projects": "Projects",
+            "education": "Education",
+            "contact": "Contact"
+        },
+        "home": {
+            "title": "Intern with almost <span>TEN years of experience!?</span>",
+            "paragraphs": [
+                "I am a Web Developer studying Software Engineering, with extensive experience as a product developer and designer, bringing solutions and seeking challenges.",
+                "It is by seeking greater challenges that I now aim to apply what I've learned in development and problem-solving in the industry, to technology.",
+                "I am looking for an internship opportunity in Web/Front-End to learn, contribute, and take my first steps in my tech career."
+            ]
+        },
+        "aboutMe": {
+            "professionalSummary": "Software Engineering student and Web Developer in training, seeking an internship opportunity in technology. Since 2017, I have incorporated complex problem-solving, project management, and system optimization into my routine. I now direct these skills toward efficient software solutions, driven by strong experience with AI for accelerated learning, code review, and rapid prototyping.",
+            "objective": "Apply web development knowledge to gain practical experience and contribute to a team.",
+            "keyTechnologies": [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "Python",
+                "SQL",
+                "Git",
+                "Linux",
+                "Generative AI (Claude, Gemini, GPT)"
+            ]
+        },
+        "differential": {
+            "title": "My Differential: From Product Development to Software Development",
+            "paragraphs": [
+                "Development and technology have been part of my journey since I started working as a 2D draftsman with AutoCAD. I merely reproduced and ran simulations for the sales and development teams, but I always found myself thinking about things that could be done more effectively and/or that would ring greater customer satisfaction. It was for this reason that I became a Designer.",
+                "As a designer, I brought major changes to processes, acting mainly as a developer of new products, and through closer proximity with sellers and clients, I developed great solutions for the company, ranging from original customized quality control systems to new budgeting techniques that accelerated the development process by up to 500%, even bringing greater precision.",
+                "After a few years working in the area inside factories, I frequently bumped into the limitations and resistance to seeking innovations within the sectors I worked in, while at the same time my fascination with the software that was part of my daily life only increased, making me turn my eyes to the sector that innovates and challenges itself the most in recent history. Technology.",
+                "For me, Web/Front-End development is an opportunity to seek greater challenges, the beginning of a journey to learn and develop myself, being part of solutions that move the world and impact our lives so much every day."
+            ]
+        },
+        "knowledge": {
+            "title": "My Skills",
+            "categories": [
+                {
+                    "id": "front-end",
+                    "title": "Front End",
+                    "items": [
+                        {
+                            "icon": "./src/img/knowledge/frontend-javascript.svg",
+                            "text": "HTML5, CSS3, JavaScript"
+                        },
+                        {
+                            "icon": "./src/img/knowledge/frontend-accessibility.svg",
+                            "text": "Responsiveness and Accessibility"
+                        },
+                        {
+                            "icon": "./src/img/knowledge/frontend-seo.svg",
+                            "text": "API Consumption and SEO"
+                        }
+                    ]
+                },
+                {
+                    "id": "back-end",
+                    "title": "BACK END & DATABASES",
+                    "items": [
+                        {
+                            "icon": "./src/img/knowledge/backend-python.svg",
+                            "text": "Python and Flask"
+                        },
+                        {
+                            "icon": "./src/img/knowledge/backend-sql.svg",
+                            "text": "SQL"
+                        },
+                        {
+                            "icon": "./src/img/knowledge/backend-algoritmos.svg",
+                            "text": "Algorithms and Data Structures"
+                        }
+                    ]
+                },
+                {
+                    "id": "tools",
+                    "title": "TOOLS AND METHODOLOGIES",
+                    "items": [
+                        {
+                            "icon": "./src/img/knowledge/ferramentas-git.svg",
+                            "text": "Git and Github"
+                        },
+                        {
+                            "icon": "./src/img/knowledge/ferramentas-tools.svg",
+                            "text": "Agile Methodology and Kanban"
+                        },
+                        {
+                            "icon": "./src/img/knowledge/ferramentas-jira.svg",
+                            "text": "Trello/Jira"
+                        },
+                        {
+                            "icon": "./src/img/knowledge/ferramentas-debian.svg",
+                            "text": "Command Line and System Administration"
+                        }
+                    ]
+                },
+                {
+                    "id": "languages",
+                    "title": "LANGUAGES",
+                    "items": [
+                        {
+                            "icon": "./src/img/knowledge/idiomas-portugues.svg",
+                            "text": "Brazilian Portuguese - Native"
+                        },
+                        {
+                            "icon": "./src/img/knowledge/idiomas-ingles.svg",
+                            "text": "American English - Advanced"
+                        },
+                        {
+                            "icon": "./src/img/knowledge/idiomas-alemao.svg",
+                            "text": "German - Basic"
+                        }
+                    ]
+                }
+            ]
+        },
+        "projectsSection": {
+            "title": "PROJECTS",
+            "description": "Here are some of the projects I developed to practice and demonstrate my skills in Front End development. New projects will be added frequently, especially original ones, as well as updates to existing ones with better practices and learned concepts, the same goes for this portfolio."
+        },
+        "projects": [
+            {
+                "name": "Clarity Board",
+                "description": "Task management and prioritization Web App, focused on helping the user decide which tasks to execute next.",
+                "type": "Web Application - Task Management and Prioritization",
+                "imagePc": "./assets/img/projects/clarityboard.png",
+                "imagePhone": "./assets/img/projects/clarityboard.png",
+                "phoneMockupPc": "./assets/img/projects/clarityboard.png",
+                "phoneMockupPhone": "./assets/img/projects/clarityboard.png",
+                "repository": "https://github.com/maxadobr/clarityboard",
+                "demoUrl": "https://maxadobr.github.io/clarityboard",
+                "status": "In development",
+                "technologies": [
+                    "HTML5",
+                    "CSS3",
+                    "Vanilla JavaScript",
+                    "IndexedDB",
+                    "JSON"
+                ],
+                "features": [
+                    "Project and task management",
+                    "Customizable category system",
+                    "Dynamic scoring and prioritization system",
+                    "i18n Internationalization (Portuguese and English)",
+                    "JSON Data Import/Export",
+                    "Local storage with IndexedDB",
+                    "Clean and minimalist interface"
+                ]
+            },
+            {
+                "name": "League of Building",
+                "description": "Project to share builds with friends.",
+                "type": "Web Application - Gaming Tool",
+                "imagePc": "./src/img/projects/lob-pc-pc.png",
+                "imagePhone": "./src/img/projects/lob-phone-pc.png",
+                "phoneMockupPc": "./src/img/projects/lob-pc-phone.png",
+                "phoneMockupPhone": "./src/img/projects/lob-phone-phone.png",
+                "repository": "https://github.com/maxadobr/leagueofbuilding",
+                "demoUrl": "https://maxadobr.github.io/leagueofbuilding/",
+                "status": "In development",
+                "technologies": [
+                    "HTML5",
+                    "CSS3",
+                    "JavaScript",
+                    "API Integration"
+                ],
+                "features": [
+                    "Uses Data Dragon API (Riot Games)",
+                    "Adds and removes items from the arsenal",
+                    "Mobile and PC design (media queries)",
+                    "Next: Interactive sharing"
+                ]
+            },
+            {
+                "name": "Pokedex",
+                "description": "Application created to display Pokémon and their main information, consuming data directly from PokeAPI.",
+                "type": "Web Application - Entertainment",
+                "imagePc": "./assets/img/projects/pokedex.png",
+                "imagePhone": "./assets/img/projects/pokedex.png",
+                "phoneMockupPc": "./assets/img/projects/pokedex.png",
+                "phoneMockupPhone": "./assets/img/projects/pokedex.png",
+                "repository": "https://github.com/maxadobr/js-developer-pokedex",
+                "demoUrl": "https://maxadobr.github.io/js-developer-pokedex",
+                "status": "Completed",
+                "technologies": [
+                    "HTML5",
+                    "CSS3",
+                    "JavaScript",
+                    "API Integration"
+                ],
+                "features": [
+                    "Dark/Light mode",
+                    "PokeAPI Consumption",
+                    "Dynamic Pokémon listing",
+                    "Detailed information display",
+                    "Responsive design",
+                    "Interactive cards"
+                ]
+            },
+            {
+                "name": "Discord Page Clone",
+                "description": "Old Discord homepage.",
+                "type": "Website Clone",
+                "imagePc": "./src/img/projects/discord-clone-pc-pc.png",
+                "imagePhone": "./src/img/projects/discord-clone-phone-pc.png",
+                "phoneMockupPc": "./src/img/projects/discord-clone-pc-phone.png",
+                "phoneMockupPhone": "./src/img/projects/discord-clone-phone-phone.png",
+                "repository": "https://github.com/maxadobr/discord-clone-responsivo-css-dio",
+                "demoUrl": "https://maxadobr.github.io/discord-clone-responsivo-css-dio/",
+                "features": [
+                    "Responsive design"
+                ]
+            },
+            {
+                "name": "Youtube Page Clone",
+                "description": "Youtube homepage aimed at practicing flexbox and other positioning properties.",
+                "type": "Website Clone",
+                "imagePc": "./src/img/projects/youtube-clone-pc-pc.png",
+                "imagePhone": "./src/img/projects/youtube-clone-phone-pc.png",
+                "phoneMockupPc": "./src/img/projects/youtube-clone-pc-phone.png",
+                "phoneMockupPhone": "./src/img/projects/youtube-clone-phone-phone.png",
+                "repository": "https://github.com/maxadobr/youtube-clone-css-dio",
+                "demoUrl": "https://maxadobr.github.io/youtube-clone-css-dio/",
+                "features": [
+                    "Non-responsive design (yet)",
+                    "Self-promotion in the conventional advertising spot"
+                ]
+            },
+            {
+                "name": "Portfolio",
+                "description": "Personal portfolio to showcase recent projects and studies.",
+                "type": "Website - Personal Portfolio",
+                "imagePc": "./assets/img/projects/portfolio.png",
+                "imagePhone": "./assets/img/projects/portfolio.png",
+                "phoneMockupPc": "./assets/img/projects/portfolio.png",
+                "phoneMockupPhone": "./assets/img/projects/portfolio.png",
+                "repository": "https://github.com/maxadobr/maxadobr.github.io",
+                "demoUrl": "https://maxadobr.github.io",
+                "status": "Continuous maintenance",
+                "technologies": [
+                    "HTML5",
+                    "CSS3",
+                    "JavaScript"
+                ],
+                "features": [
+                    "Dark/Light mode",
+                    "Responsive design",
+                    "Project showcase",
+                    "SEO for skills",
+                    "Links to social networks and GitHub"
+                ]
+            }
+        ],
+        "educationSection": {
+            "title": "Education and Studies"
+        },
+        "education": [
+            {
+                "course": "Software Engineering (4 years)",
+                "institution": "UniCesumar",
+                "period": "05/2025 ~ 04/2029"
+            },
+            {
+                "course": "CS50x - Introduction to Computer Science (250h)",
+                "institution": "Harvard University Online (edX)",
+                "period": "04/2025 ~ 12/2025"
+            },
+            {
+                "course": "Front End Development (102h)",
+                "institution": "Santander Open Academy (DIO)",
+                "period": "06/2025 ~ 08/2025"
+            },
+            {
+                "course": "React - The library for web and native user interfaces",
+                "institution": "React Official Documentation",
+                "period": "Expected Start: 02/2026"
+            }
+        ],
+        "experienceSection": {
+            "title": "Professional Experience"
+        },
+        "experience": [
+            {
+                "type": "Self-Employed",
+                "company": "Marcelo Machado - Projects and Solutions",
+                "role": "Self-Employed Consultant",
+                "period": "05/2024 ~ Present",
+                "responsibilities": [
+                    "Development of work methodologies and products, specifically in rubber for automotive and construction lines, making processes more profitable, efficient, and auditable.",
+                    "Facilitating the onboarding of new employees to the production process through robust technical documentation that is simple and objective for factory staff.",
+                    "Reducing the possibility of human error through systems."
+                ]
+            },
+            {
+                "type": "Contract",
+                "company": "Madox - Autopeças em Borracha ME",
+                "role": "Operations Analyst",
+                "period": "09/2021 ~ 01/2024",
+                "responsibilities": [
+                    "Developing products according to market needs.",
+                    "Observing trends in the automotive aftermarket.",
+                    "Elaboration of technical datasheets and drawings.",
+                    "Production planning, control, and costing."
+                ]
+            },
+            {
+                "type": "Contract",
+                "company": "Neobor - Indústria de Artefatos de Borracha Ltda",
+                "role": "Product Developer",
+                "period": "04/2017 ~ 04/2021",
+                "responsibilities": [
+                    "Developing items and tools for civil construction and automotive lines.",
+                    "Elaboration of technical datasheets and drawings for development, production, and quality control.",
+                    "Calculations and projections for product budgets and logistics."
+                ]
+            }
+        ],
+        "contactsSection": {
+            "title": "Contact"
+        },
+        "contacts": [
+            {
+                "url": "https://www.linkedin.com/in/maxadobr/",
+                "iconLight": "./src/img/contact/l-linkedin.svg",
+                "iconDark": "./src/img/contact/d-linkedin.svg",
+                "text": "linkedin.com/in/maxadobr"
+            },
+            {
+                "url": "https://github.com/maxadobr",
+                "iconLight": "./src/img/contact/l-github.svg",
+                "iconDark": "./src/img/contact/d-github.svg",
+                "text": "github.com/maxadobr"
+            },
+            {
+                "url": "https://www.instagram.com/maxadobr/",
+                "iconLight": "./src/img/contact/l-instagram.svg",
+                "iconDark": "./src/img/contact/d-instagram.svg",
+                "text": "instagram.com/maxadobr"
+            }
+        ],
+        "footer": "©  2025. All rights reserved. Marcelo Machado."
+    }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt_BR" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,482 +8,145 @@
     <link rel="stylesheet" href="./src/css/main.css">
     <link rel="shortcut icon" href="./src/img/favicon/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header>
         <div class="logo-holder">
             <img src="./src/img/header/maxado-logo.svg" alt="">
         </div>
         <div class="my-name">
-            <strong>
-                Marcelo Machado
-            </strong>
+            <strong id="header-name"></strong>
             <a href="">
-                <small>
-                    @maxadobr
-                </small>
+                <small id="header-username"></small>
             </a>
         </div>
         <div id="toggleTheme" class="dark-mode-switch">
-            <img src="./src/img/header/switch_on.svg" alt="" 
-            class="theme-icon"  
-            data-src-light="./src/img/header/switch_on.svg" 
-            data-src-dark="./src/img/header/switch_off.svg">
+            <img src="./src/img/header/switch_on.svg" alt="" class="theme-icon"
+                data-src-light="./src/img/header/switch_on.svg" data-src-dark="./src/img/header/switch_off.svg">
         </div>
     </header>
     <main>
         <section id="s1" class="home">
-            <h1>
-                Estagiário com quase <span>DEZ anos de experiência!?</span>
-            </h1>
-            <div>
+            <h1 id="home-title"></h1>
+            <div id="home-description">
                 <img class="big-image paquimeter pc" src="./src/img/home/paquimeter-pc.jpg" alt="">
                 <img class="big-image paquimeter phone" src="./src/img/home/paquimeter-phone.jpg" alt="">
-                <p>
-                    Sou um Desenvolvedor Web cursando Engenharia de Software, com uma vasta experiência como desenvolvedor de produtos e projetista, trazendo soluções e buscando desafios.
-                </p>
-                <p>
-                    É pela busca por maiores desafios que agora busco aplicar o que aprendi no desenvolvimento e solução de problemas na indústria, para a tecnologia.
-                </p>
-                <p>
-                    Busco uma oportunidade de estágio em Web/Front-End para aprender, contribuir e dar meus primeiros passos na minha carreira em tecnologia.
-                </p>
             </div>
         </section>
         <section class="socials">
             <div class="socials-box">
                 <a href="https://www.linkedin.com/in/maxadobr/">
-                    <img src="./src/img/contact/l-linkedin.svg"
-                    class="theme-icon"  
-                    data-src-light="./src/img/contact/l-linkedin.svg" 
-                    data-src-dark="./src/img/contact/d-linkedin.svg">
+                    <img src="./src/img/contact/l-linkedin.svg" class="theme-icon"
+                        data-src-light="./src/img/contact/l-linkedin.svg"
+                        data-src-dark="./src/img/contact/d-linkedin.svg">
                 </a>
                 <a href="https://github.com/maxadobr">
-                    <img src="./src/img/contact/l-github.svg"
-                    class="theme-icon"  
-                    data-src-light="./src/img/contact/l-github.svg" 
-                    data-src-dark="./src/img/contact/d-github.svg">
+                    <img src="./src/img/contact/l-github.svg" class="theme-icon"
+                        data-src-light="./src/img/contact/l-github.svg" data-src-dark="./src/img/contact/d-github.svg">
                 </a>
                 <a target="_blank" href="https://www.instagram.com/maxadobr/">
-                    <img src="./src/img/contact/l-instagram.svg"
-                    class="theme-icon"  
-                    data-src-light="./src/img/contact/l-instagram.svg" 
-                    data-src-dark="./src/img/contact/d-instagram.svg">
+                    <img src="./src/img/contact/l-instagram.svg" class="theme-icon"
+                        data-src-light="./src/img/contact/l-instagram.svg"
+                        data-src-dark="./src/img/contact/d-instagram.svg">
                 </a>
             </div>
         </section>
         <section id="s2" class="differential">
-            <h2>
-                Meu Diferencial: Do Desenvolvimento de Produtos, ao Desenvolvimento de Software
-            </h2>
-            <p>
-                Desenvolvimento e tecnologia fazem parte da minha jornada desde que comecei a trabalhar como desenhista 2D com AutoCAD. Eu apenas reproduzia e fazia simulações para as equipes de vendas e desenvolvimento, porém sempre me peguei pensando em coisas que poderiam ser feitas de maneira mais eficazes e/ou que trouxessem maior satisfação ao cliente. Foi por este motivo que me tornei um Projetista.
-            </p>
-            <p>
-                Como projetista, consegui trazer grandes mudanças para os processos, atuando principalmente como desenvolvedor de novos produtos, e mediante a uma maior proximidade com os vendedores e clientes, desenvolvi grandes soluções para a empresa, que foram desde sistemas originais personalizados de controle de qualidade até novas técnicas para orçamento que aceleraram em até 500% o processo de desenvolvimento, trazendo até mesmo ganho de precisão.
-            </p>
-            <img class="big-image" src="./src/img/differential/product-roadmap.jpg" alt="">
-            <p>
-                Depois de alguns anos atuando na área dentro de fábricas, me esbarrei diversas vezes nas limitações e resistência à busca de inovações dentro setores que atuei, ao mesmo tempo que meu fascínio pelos softwares que faziam parte do meu dia-a-dia só aumentavam, fizeram virar os olhos ao setor que mais inova e se desafia na história recente. Tecnologia.
-            </p>
-            <p>
-                O desenvolvimento Web/Front-End para mim é uma oportunidade de buscar desafios maiores, um início de jornada para aprender e me desenvolver, fazendo parte de soluções que movem o mundo e tanto impactam nossas vidas todos os dias.
-            </p>
+            <h2 id="differential-title"></h2>
+            <div id="differential-description">
+            </div>
         </section>
         <section id="s3" class="knowledge">
-            <h2>
-                Minhas Habilidades
-            </h2>
-            <ul class="front-end">
-                <h3>
-                    Front End
-                </h3>
-                <li>
-                    <img src="./src/img/knowledge/frontend-javascript.svg">
-                    <span>
-                        HTML5, CSS3, JavaScript
-                    </span>
-                </li>
-                <li>
-                    <img src="./src/img/knowledge/frontend-accessibility.svg">
-                    <span>
-                        Responsividade e Acessibilidade
-                    </span>
-                </li>
-                <li>
-                    <img src="./src/img/knowledge/frontend-seo.svg">
-                    <span>
-                        Consumo de API e SEO
-                    </span>
-                </li>
-            </ul>
-            <ul class="back-end">
-                <h3>
-                    BACK END & BANCO DE DADOS
-                </h3>
-                <li>
-                    <img src="./src/img/knowledge/backend-python.svg">
-                    <span>
-                        Python e Flask
-                    </span>
-                </li>
-                <li>
-                    <img src="./src/img/knowledge/backend-sql.svg">
-                    <span>
-                        SQL
-                    </span>
-                </li>
-                <li>
-                    <img src="./src/img/knowledge/backend-algoritmos.svg">
-                    <span>
-                        Algoritmos e Estrutura de Dados
-                    </span>
-                </li>
-            </ul>
-            <ul class="tools">
-                <h3>
-                    FERRAMENTAS E METODOLOGIAS
-                </h3>
-                <li>
-                    <img src="./src/img/knowledge/ferramentas-git.svg">
-                    <span>
-                        Git e Github
-                    </span>
-                </li>
-                <li>
-                    <img src="./src/img/knowledge/ferramentas-tools.svg">
-                    <span>
-                        Metodologia Ágil e Kanban
-                    </span>
-                </li>
-                <li>
-                    <img src="./src/img/knowledge/ferramentas-jira.svg">
-                    <span>
-                        Trello/Jira
-                    </span>
-                </li>
-                <li>
-                    <img src="./src/img/knowledge/ferramentas-debian.svg">
-                    <span>
-                        Linha de Comando e Administração de Sistemas
-                    </span>
-                </li>
-            </ul>
-            <ul class="languages">
-                <h3>
-                    IDIOMAS
-                </h3>
-                <li>
-                    <img src="./src/img/knowledge/idiomas-portugues.svg">
-                    <span>
-                        Português Brasileiro - Nativo
-                    </span>
-                </li>
-                <li>
-                    <img src="./src/img/knowledge/idiomas-ingles.svg">
-                    <span>
-                        Inglês Americano - Avançado
-                    </span>
-                </li>
-                <li>
-                    <img src="./src/img/knowledge/idiomas-alemao.svg">
-                    <span>
-                        Alemão - Básico
-                    </span>
-                </li>
-            </ul>
+            <h2 id="knowledge-title"></h2>
+            <div id="knowledge-container">
+            </div>
         </section>
         <section id="s4" class="projects">
-            <h2>
-                PROJETOS
-            </h2>
-            <p>
-                Aqui estão alguns dos projetos que desenvolvi para praticar e demonstrar minhas habilidades no desenvolvimento Front End. Serão adicionados com frequência novos projetos, especialmente originais, assim como atualização dos existentes com melhores práticas e conceitos aprendidos, o mesmo vale para este portfólio.
-            </p>
-            <article class="project">
-                <h3>
-                    League of Building
-                </h3>
-                <section class="presentation">
-                    <img class="pc-img pc" src="./src/img/projects/lob-pc-pc.png" alt="">
-                    <img class="pc-img phone" src="./src/img/projects/lob-phone-pc.png" alt="">
-                    <div>
-                        <p>
-                            Projeto para compartilhar builds com amigos.
-                        </p>
-                        <section class="details">
-                            <ul>
-                                <li>
-                                    Utiliza a API Data Dragon (Riot Games)
-                                </li>
-                                <li>
-                                    Adiciona e remove itens do arsenal
-                                </li>
-                                <li>
-                                    Design mobile e PC (media queries)
-                                </li>
-                                <li>
-                                    Next: Compartilhamento interativo
-                                </li>
-                            </ul>
-                            <img class="phone-img pc" src="./src/img/projects/lob-pc-phone.png" alt="">
-                            <img class="phone-img phone" src="./src/img/projects/lob-phone-phone.png" alt="">
-                        </section>
-                    </div>
-                </section>
-                <div class="project-buttons">
-                    <div class="preview">
-                        <a target="_blank" href="https://maxadobr.github.io/leagueofbuilding/">
-                            <button class="preview-button">
-                                Prévia
-                            </button>
-                        </a>
-                    </div>
-                    <div class="repository">
-                        <a target="_blank" href="https://github.com/maxadobr/leagueofbuilding">
-                            <button class="repository-button">
-                                Repositório
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </article>
-            <article class="project">
-                <h3>
-                    Discord Page Clone
-                </h3>
-                <section class="presentation">
-                    <img class="pc-img pc" src="./src/img/projects/discord-clone-pc-pc.png" alt="">
-                    <img class="pc-img phone" src="./src/img/projects/discord-clone-phone-pc.png" alt="">
-                    <div>
-                        <p>
-                            Página inicial antiga do Discord.
-                        </p>
-                        <section class="details">
-                            <ul>
-                                <li>
-                                    Design responsivo
-                                </li>
-                            </ul>
-                            <img class="phone-img pc" src="./src/img/projects/discord-clone-pc-phone.png" alt="">
-                            <img class="phone-img phone" src="./src/img/projects/discord-clone-phone-phone.png" alt="">
-                        </section>
-                    </div>
-                </section>
-                <div class="project-buttons">
-                    <div class="preview">
-                        <a target="_blank" href="https://maxadobr.github.io/discord-clone-responsivo-css-dio/">
-                            <button class="preview-button">
-                                Prévia
-                            </button>
-                        </a>
-                    </div>
-                    <div class="repository">
-                        <a target="_blank" href="https://github.com/maxadobr/discord-clone-responsivo-css-dio">
-                            <button class="repository-button">
-                                Repositório
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </article>
-            <article class="project">
-                <h3>
-                    Youtube Page Clone
-                </h3>
-                <section class="presentation">
-                    <img class="pc-img pc big-image" src="./src/img/projects/youtube-clone-pc-pc.png" alt="">
-                    <img class="pc-img phone" src="./src/img/projects/youtube-clone-phone-pc.png" alt="">
-                    <div>
-                        <p>
-                            Página inicial do Youtube com objetivo de treinar flexbox e demais propriedades de posicionamento.
-                        </p>
-                        <section class="details">
-                            <ul>
-                                <li>
-                                    Design não-responsivo (ainda)
-                                </li>
-                                <li>
-                                    Promoção pessoal no local convencional de advertising
-                                </li>
-                            </ul>
-                            <img class="phone-img pc big-image" src="./src/img/projects/youtube-clone-pc-phone.png" alt="">
-                            <img class="phone-img phone" src="./src/img/projects/youtube-clone-phone-phone.png" alt="">
-                        </section>
-                    </div>
-                </section>
-                <div class="project-buttons">
-                    <div class="preview">
-                        <a target="_blank" href="https://maxadobr.github.io/youtube-clone-css-dio/">
-                            <button class="preview-button">
-                                Prévia
-                            </button>
-                        </a>
-                    </div>
-                    <div class="repository">
-                        <a target="_blank" href="https://github.com/maxadobr/youtube-clone-css-dio">
-                            <button class="repository-button">
-                                Repositório
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </article>
+            <h2 id="projects-title"></h2>
+            <p id="projects-description"></p>
+            <div id="projects-container">
+            </div>
         </section>
         <section id="s5" class="education">
-            <h2>
-                Formação e Estudos
-            </h2>
-            <article class="course">
-                <h3>
-                    Engenharia de Software (4 anos)
-                </h3>
-                <span>
-                    <strong>
-                        UniCesumar
-                    </strong>
-                </span>
-                <span>
-                    05/2025 ~ 04/2029
-                </span>
-            </article>
-            <article class="course">
-                <h3>
-                    Desenvolvimento Front End (102h)
-                </h3>
-                <span>
-                    <strong>
-                        Santander Open Academy (DIO)
-                    </strong>
-                </span>
-                <span>
-                    06/2025 ~ 08/2025
-                </span>
-            </article>
-            <article class="course">
-                <h3>
-                    CS50x - Introdução à ciência da computação (250h)
-                </h3>
-                <span>
-                    <strong>
-                        Harvard University Online (edX)
-                    </strong>
-                </span>
-                <span>
-                    04/2025 ~ 09/2025
-                </span>
-            </article>
+            <h2 id="education-title"></h2>
+            <div id="education-container">
+            </div>
+        </section>
+        <section id="s-exp" class="experience">
+            <h2 id="experience-title"></h2>
+            <div id="experience-container">
+            </div>
         </section>
         <section id="s6" class="contacts">
-            <h2>
-                Contato
-            </h2>
-            <article class="contact-info">
-                <a href="https://www.linkedin.com/in/maxadobr/">
-                    <img src="./src/img/contact/l-linkedin.svg" alt=""
-                        class="theme-icon"  
-                        data-src-light="./src/img/contact/l-linkedin.svg" 
-                        data-src-dark="./src/img/contact/d-linkedin.svg">
-                    <span>
-                        linkedin.com/in/maxadobr
-                    </span>
-                </a>
-                <a href="https://github.com/maxadobr">
-                    <img src="./src/img/contact/l-github.svg" alt=""
-                        class="theme-icon"  
-                        data-src-light="./src/img/contact/l-github.svg" 
-                        data-src-dark="./src/img/contact/d-github.svg">
-                    <span>
-                        github.com/maxadobr
-                    </span>
-                </a>
-                <a href="https://www.instagram.com/maxadobr/">
-                    <img src="./src/img/contact/l-instagram.svg" alt=""
-                        class="theme-icon"  
-                        data-src-light="./src/img/contact/l-instagram.svg" 
-                        data-src-dark="./src/img/contact/d-instagram.svg">
-                    <span>
-                        instagram.com/maxadobr
-                    </span>
-                </a>
+            <h2 id="contacts-title"></h2>
+            <article class="contact-info" id="contacts-container">
             </article>
         </section>
         <footer>
-            <p>
-                ©  2025. Todos os direitos reservados. Marcelo Machado.
-            </p>
+            <p id="footer-text"></p>
         </footer>
     </main>
     <nav>
         <section class="section-nav">
             <img id="side-logo" src="./src/img/header/maxado-logo.svg" alt="">
-            <a class="section-link" href="#s1">
+            <a class="section-link" href="#">
                 <div class="section-icon">
-                    <img src="./src/img/nav/l-home-icon.svg" alt=""
-                        class="theme-icon"  
-                        data-src-light="./src/img/nav/l-home-icon.svg" 
-                        data-src-dark="./src/img/nav/d-home-icon.svg">
+                    <img src="./src/img/nav/l-home-icon.svg" alt="" class="theme-icon"
+                        data-src-light="./src/img/nav/l-home-icon.svg" data-src-dark="./src/img/nav/d-home-icon.svg">
                 </div>
-                <span>
-                    Home
-                </span>
+                <span id="nav-home"></span>
             </a>
             <a class="section-link" href="#s2">
                 <div class="section-icon">
-                    <img src="./src/img/nav/l-differential-icon.svg" alt=""
-                        class="theme-icon"  
-                        data-src-light="./src/img/nav/l-differential-icon.svg" 
+                    <img src="./src/img/nav/l-differential-icon.svg" alt="" class="theme-icon"
+                        data-src-light="./src/img/nav/l-differential-icon.svg"
                         data-src-dark="./src/img/nav/d-differential-icon.svg">
                 </div>
-                <span>
-                    Diferencial
-                </span>
+                <span id="nav-differential"></span>
             </a>
             <a class="section-link" href="#s3">
                 <div class="section-icon">
-                    <img src="./src/img/nav/l-knowledge-icon.svg" alt=""
-                        class="theme-icon"  
-                        data-src-light="./src/img/nav/l-knowledge-icon.svg" 
+                    <img src="./src/img/nav/l-knowledge-icon.svg" alt="" class="theme-icon"
+                        data-src-light="./src/img/nav/l-knowledge-icon.svg"
                         data-src-dark="./src/img/nav/d-knowledge-icon.svg">
                 </div>
-                <span>
-                    Habilidades
-                </span>
+                <span id="nav-knowledge"></span>
             </a>
             <a class="section-link" href="#s4">
                 <div class="section-icon">
-                    <img src="./src/img/nav/l-projects-icon.svg" alt=""
-                        class="theme-icon"  
-                        data-src-light="./src/img/nav/l-projects-icon.svg" 
+                    <img src="./src/img/nav/l-projects-icon.svg" alt="" class="theme-icon"
+                        data-src-light="./src/img/nav/l-projects-icon.svg"
                         data-src-dark="./src/img/nav/d-projects-icon.svg">
                 </div>
-                <span>
-                    Projetos
-                </span>
+                <span id="nav-projects"></span>
             </a>
             <a class="section-link" href="#s5">
                 <div class="section-icon">
-                    <img src="./src/img/nav/l-education-icon.svg" alt=""
-                        class="theme-icon"  
-                        data-src-light="./src/img/nav/l-education-icon.svg" 
+                    <img src="./src/img/nav/l-education-icon.svg" alt="" class="theme-icon"
+                        data-src-light="./src/img/nav/l-education-icon.svg"
                         data-src-dark="./src/img/nav/d-education-icon.svg">
                 </div>
-                <span>
-                    Formação
-                </span>
+                <span id="nav-education"></span>
+            </a>
+            <a class="section-link" href="#s-exp">
+                <div class="section-icon">
+                    <img src="./src/img/nav/l-education-icon.svg" alt="" class="theme-icon"
+                        data-src-light="./src/img/nav/l-education-icon.svg"
+                        data-src-dark="./src/img/nav/d-education-icon.svg">
+                </div>
+                <span id="nav-experience">Experiência</span>
             </a>
             <a class="section-link" href="#s6">
                 <div class="section-icon">
-                    <img src="./src/img/nav/l-contact-icon.svg" alt=""
-                        class="theme-icon"  
-                        data-src-light="./src/img/nav/l-contact-icon.svg" 
+                    <img src="./src/img/nav/l-contact-icon.svg" alt="" class="theme-icon"
+                        data-src-light="./src/img/nav/l-contact-icon.svg"
                         data-src-dark="./src/img/nav/d-contact-icon.svg">
                 </div>
-                <span>
-                    Contato
-                </span>
+                <span id="nav-contact"></span>
             </a>
         </section>
     </nav>
     <script src="./src/js/scripts.js"></script>
 </body>
+
 </html>

@@ -1,7 +1,8 @@
 @import url('./normalize.css');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=League+Spartan:wght@100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
-:root, :root[data-theme='light'] {
+:root,
+:root[data-theme='light'] {
     --bg-color1: #f6fcfc;
     --bg-color1-alpha: #f6fcfc60;
     --bg-color1-alt: #ebf6f8;
@@ -21,27 +22,25 @@
     --highlight-border: #7BC6E2;
     --highlight-color: #331814;
     --blue-fg-title: #16334E;
-    --bt-grad-default: linear-gradient(180deg, 
-        var(--bg-color1), 
-        var(--bg-color3));
-    --bt-grad-selected: linear-gradient(180deg, 
-        var(--bg-color1), 
-        var(--bg-color3));
+    --bt-grad-default: linear-gradient(180deg,
+            var(--bg-color1),
+            var(--bg-color3));
+    --bt-grad-selected: linear-gradient(180deg,
+            var(--bg-color1),
+            var(--bg-color3));
     --bt-border-default: solid 1px transparent;
     --bt-border-hover: solid 3px rgba(164, 219, 233, 0.671);
     --bt-border-selected: solid 1px rgba(198, 206, 231, 0.5);
-    --bg-deg-alt-v: linear-gradient(180deg, 
-        var(--bg-color1) 0%, 
-        var(--bg-color1-alt) 3%, 
-        var(--bg-color1-alt) 97%, 
-        var(--bg-color1) 100%
-    );
-    --bg-deg-alt-h: linear-gradient(90deg, 
-        var(--bg-color1) 0%, 
-        var(--bg-color1-alt) 3%, 
-        var(--bg-color1-alt) 97%, 
-        var(--bg-color1) 100%
-    );
+    --bg-deg-alt-v: linear-gradient(180deg,
+            var(--bg-color1) 0%,
+            var(--bg-color1-alt) 3%,
+            var(--bg-color1-alt) 97%,
+            var(--bg-color1) 100%);
+    --bg-deg-alt-h: linear-gradient(90deg,
+            var(--bg-color1) 0%,
+            var(--bg-color1-alt) 3%,
+            var(--bg-color1-alt) 97%,
+            var(--bg-color1) 100%);
     --blend-mode: lighten;
 }
 
@@ -65,27 +64,25 @@
     --highlight-border: #A2DBD9;
     --highlight-color: #2F211D;
     --blue-fg-title: #64bbd1;
-    --bt-grad-default: linear-gradient(180deg, 
-        var(--bg-color1), 
-        var(--bg-color3));
-    --bt-grad-selected: linear-gradient(180deg, 
-        var(--bg-color1), 
-        var(--bg-color3));
+    --bt-grad-default: linear-gradient(180deg,
+            var(--bg-color1),
+            var(--bg-color3));
+    --bt-grad-selected: linear-gradient(180deg,
+            var(--bg-color1),
+            var(--bg-color3));
     --bt-border-default: solid 1px transparent;
     --bt-border-hover: solid 1px rgba(164, 219, 233, 0.671);
     --bt-border-selected: solid 1px rgba(198, 206, 231, 0.5);
-    --bg-deg-alt-v: linear-gradient(180deg, 
-        var(--bg-color1) 0%, 
-        var(--bg-color1-alt) 3%, 
-        var(--bg-color1-alt) 97%, 
-        var(--bg-color1) 100%
-    );
-    --bg-deg-alt-h: linear-gradient(90deg, 
-        var(--bg-color1) 0%, 
-        var(--bg-color1-alt) 3%, 
-        var(--bg-color1-alt) 97%, 
-        var(--bg-color1) 100%
-    );
+    --bg-deg-alt-v: linear-gradient(180deg,
+            var(--bg-color1) 0%,
+            var(--bg-color1-alt) 3%,
+            var(--bg-color1-alt) 97%,
+            var(--bg-color1) 100%);
+    --bg-deg-alt-h: linear-gradient(90deg,
+            var(--bg-color1) 0%,
+            var(--bg-color1-alt) 3%,
+            var(--bg-color1-alt) 97%,
+            var(--bg-color1) 100%);
     --blend-mode: exclusion;
 }
 
@@ -100,6 +97,8 @@
 html {
     background-color: var(--bg-color1);
     margin: auto;
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
 }
 
 h2 {
@@ -109,12 +108,15 @@ h2 {
     font-weight: 600;
     color: var(--blue-fg-title);
     margin-bottom: 0;
-    padding: 0 1rem;
+    padding: 1.5rem 1rem 0;
     text-align: center;
     text-transform: uppercase;
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Instrument Sans';
     font-size: 1.25rem;
     font-weight: 500;
@@ -125,7 +127,8 @@ h3, h4, h5, h6 {
     text-decoration-line: underline;
 }
 
-h1, h1 > span {
+h1,
+h1>span {
     font-family: 'League Spartan', 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.8rem;
     letter-spacing: 5%;
@@ -250,14 +253,14 @@ main {
     background-color: var(--bg-color1);
 }
 
-main > section {
+main>section {
     text-wrap: wrap;
     flex-wrap: wrap;
     overflow-wrap: break-word;
     display: flex;
 }
 
-main > section p {
+main>section p {
     padding-left: 1rem;
     padding-right: 1rem;
     flex-direction: column;
@@ -268,24 +271,24 @@ main > section p {
     border: solid 1px var(--bg-border2);
 }
 
-h1 > span {
+h1>span {
     display: inline-block;
     color: var(--highlight);
 }
 
-main .home > div {
+main .home>div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main .home > div div {
+main .home>div div {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-main .home > div img {
+main .home>div img {
     width: 100%;
     border-radius: 2rem;
 }
@@ -486,7 +489,7 @@ main .contacts .contact-info a {
     padding: 0.5rem 0;
 }
 
-main .contacts .contact-info a span{
+main .contacts .contact-info a span {
     margin-left: 0.5rem;
     overflow-wrap: break-word;
     color: var(--color3);
@@ -553,7 +556,12 @@ nav .section-nav .section-link img {
         line-height: 3.5rem;
     }
 
-    h1, h2, h3, h4, h5, p {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
         flex-wrap: wrap;
         word-wrap: break-word;
         overflow-wrap: break-word;
@@ -570,7 +578,10 @@ nav .section-nav .section-link img {
         width: 100%;
     }
 
-    h3, h4, h5, h6 {
+    h3,
+    h4,
+    h5,
+    h6 {
         font-family: 'Instrument Sans';
         font-size: 1.5rem;
         line-height: 3rem;
@@ -595,7 +606,8 @@ nav .section-nav .section-link img {
 
     /* Components */
 
-    h1, h1 > span {
+    h1,
+    h1>span {
         margin-top: 0;
         font-size: 4rem;
         line-height: 4rem;
@@ -605,12 +617,13 @@ nav .section-nav .section-link img {
         text-align: center;
     }
 
-    h1 > span {
+    h1>span {
         font-size: 5rem;
         line-height: 7rem;
     }
 
-    main, header {
+    main,
+    header {
         padding-left: 350px
     }
 
@@ -730,15 +743,15 @@ nav .section-nav .section-link img {
         text-align: center;
     }
 
-    main > section {
+    main>section {
         align-items: center;
         padding-left: 15%;
         padding-right: 15%;
     }
 
-    main > section h1,
-    main > section h2,
-    main > section h3 {
+    main>section h1,
+    main>section h2,
+    main>section h3 {
         padding-left: 0;
         padding-right: 0;
     }
@@ -746,7 +759,7 @@ nav .section-nav .section-link img {
     main .home {
         margin-top: 0;
         padding-top: 0.5rem;
-        display: block; 
+        display: block;
         flex-direction: column;
     }
 
@@ -764,28 +777,28 @@ nav .section-nav .section-link img {
         text-align: center;
     }
 
-    main .home > div {
+    main .home>div {
         width: 100%;
         display: flow-root;
     }
 
-    main .home > div p {
+    main .home>div p {
         color: var(--color1);
         text-align: left;
         padding: 0;
         margin: 0;
-        margin-bottom: 1.5rem; 
+        margin-bottom: 1.5rem;
     }
 
-    main .home > div p:last-child {
-    margin-bottom: 0;
-}
+    main .home>div p:last-child {
+        margin-bottom: 0;
+    }
 
-    main .home > div div {
+    main .home>div div {
         width: auto;
     }
 
-    main .home > div img.pc {
+    main .home>div img.pc {
         float: left;
         width: 30%;
         border-radius: 2rem;
@@ -888,7 +901,7 @@ nav .section-nav .section-link img {
         border-radius: 2rem;
         font-size: 2rem;
     }
-    
+
     main .education .course h3 {
         font-size: 2.5rem;
         margin-bottom: 0.5rem;
@@ -912,11 +925,11 @@ nav .section-nav .section-link img {
         border-radius: 2rem;
     }
 
-    main .contacts .contact-info a img{
+    main .contacts .contact-info a img {
         width: 64px;
     }
 
-    main .contacts .contact-info a span{
+    main .contacts .contact-info a span {
         margin-left: 1.5rem;
         overflow-wrap: break-word;
         font-size: 2.5rem;
