@@ -156,45 +156,6 @@ function renderContent() {
         }
     });
 
-    // Knowledge Section
-    document.getElementById('knowledge-title').textContent = portfolioData.knowledge.title;
-    const knowContainer = document.getElementById('knowledge-container');
-    knowContainer.innerHTML = '';
-    portfolioData.knowledge.categories.forEach(category => {
-        const ul = document.createElement('ul');
-        const safeId = category.id || `know-${Math.random().toString(36).substr(2, 5)}`;
-        ul.id = safeId;
-        ul.className = "list-section__group " + (category.id || '');
-        const h3 = document.createElement('h3');
-        h3.textContent = category.title;
-        ul.appendChild(h3);
-
-        // Add to sub-nav
-        const subNavNode = document.getElementById('subnav-s3');
-        if (subNavNode) {
-            const subLink = document.createElement('a');
-            subLink.href = `#${safeId}`;
-            subLink.className = "sub-nav__link";
-            subLink.textContent = category.title;
-            subNavNode.appendChild(subLink);
-        }
-
-        category.items.forEach(item => {
-            const li = document.createElement('li');
-            li.className = "list-section__item";
-            const img = document.createElement('img');
-            img.src = item.icon;
-            img.className = "list-section__icon";
-            const span = document.createElement('span');
-            span.className = "list-section__text";
-            span.textContent = item.text;
-            li.appendChild(img);
-            li.appendChild(span);
-            ul.appendChild(li);
-        });
-        knowContainer.appendChild(ul);
-    });
-
     // Projects Section
     document.getElementById('projects-title').textContent = portfolioData.projectsSection.title;
     document.getElementById('projects-description').textContent = portfolioData.projectsSection.description;
@@ -250,18 +211,12 @@ function renderContent() {
                 sectionDet.appendChild(ulTech);
             }
 
-            if (project.features && project.features.length > 0 && project.technologies && project.technologies.length > 0) {
-                const divider = document.createElement('div');
-                divider.className = "project__list-divider";
-                sectionDet.appendChild(divider);
-            }
-
             if (project.features && project.features.length > 0) {
                 const ulFeat = document.createElement('ul');
                 ulFeat.className = "feat-list";
                 project.features.forEach(feat => {
                     const li = document.createElement('li');
-                    li.textContent = feat;
+                    li.innerHTML = `<strong>></strong> ${feat}`;
                     ulFeat.appendChild(li);
                 });
                 sectionDet.appendChild(ulFeat);
@@ -273,41 +228,71 @@ function renderContent() {
         sectionPres.appendChild(divDetails);
         article.appendChild(sectionPres);
 
-        const divButtons = document.createElement('div');
-        divButtons.className = "project-buttons";
+        const projectLinks = document.createElement('div');
+        projectLinks.className = "project-buttons";
 
         if (project.demoUrl) {
-            const divPreview = document.createElement('div');
-            divPreview.className = "preview";
-            const aPrev = document.createElement('a');
-            aPrev.target = "_blank";
-            aPrev.href = project.demoUrl;
-            const btnPrev = document.createElement('button');
-            btnPrev.className = "preview-button";
-            btnPrev.textContent = "Prévia";
-            aPrev.appendChild(btnPrev);
-            divPreview.appendChild(aPrev);
-            divButtons.appendChild(divPreview);
+            const linkDemo = document.createElement('a');
+            linkDemo.href = project.demoUrl;
+            linkDemo.target = "_blank";
+            const btnDemo = document.createElement('button');
+            btnDemo.textContent = "Preview";
+            linkDemo.appendChild(btnDemo);
+            projectLinks.appendChild(linkDemo);
         }
 
         if (project.repository) {
-            const divRepo = document.createElement('div');
-            divRepo.className = "repository";
-            const aRepo = document.createElement('a');
-            aRepo.target = "_blank";
-            aRepo.href = project.repository;
+            const linkRepo = document.createElement('a');
+            linkRepo.href = project.repository;
+            linkRepo.target = "_blank";
             const btnRepo = document.createElement('button');
-            btnRepo.className = "repository-button";
             btnRepo.textContent = "Repositório";
-            aRepo.appendChild(btnRepo);
-            divRepo.appendChild(aRepo);
-            divButtons.appendChild(divRepo);
+            linkRepo.appendChild(btnRepo);
+            projectLinks.appendChild(linkRepo);
         }
 
-        article.appendChild(divButtons);
+        article.appendChild(projectLinks);
         projContainer.appendChild(article);
     });
 
+    // Knowledge Section
+    document.getElementById('knowledge-title').textContent = portfolioData.knowledge.title;
+    const knowContainer = document.getElementById('knowledge-container');
+    knowContainer.innerHTML = '';
+    portfolioData.knowledge.categories.forEach(category => {
+        const ul = document.createElement('ul');
+        const safeId = category.id || `know-${Math.random().toString(36).substr(2, 5)}`;
+        ul.id = safeId;
+        ul.className = "list-section__group " + (category.id || '');
+        const h3 = document.createElement('h3');
+        h3.textContent = category.title;
+        ul.appendChild(h3);
+
+        // Add to sub-nav
+        const subNavNode = document.getElementById('subnav-s3');
+        if (subNavNode) {
+            const subLink = document.createElement('a');
+            subLink.href = `#${safeId}`;
+            subLink.className = "sub-nav__link";
+            subLink.textContent = category.title;
+            subNavNode.appendChild(subLink);
+        }
+
+        category.items.forEach(item => {
+            const li = document.createElement('li');
+            li.className = "list-section__item";
+            const img = document.createElement('img');
+            img.src = item.icon;
+            img.className = "list-section__icon";
+            const span = document.createElement('span');
+            span.className = "list-section__text";
+            span.textContent = item.text;
+            li.appendChild(img);
+            li.appendChild(span);
+            ul.appendChild(li);
+        });
+        knowContainer.appendChild(ul);
+    });
     // Education Section
     document.getElementById('education-title').textContent = portfolioData.educationSection.title;
     const eduContainer = document.getElementById('education-container');

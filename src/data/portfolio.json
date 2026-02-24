@@ -15,9 +15,9 @@
         "home": {
             "title": "Estagiário com quase <span>DEZ anos de experiência!?</span>",
             "paragraphs": [
-                "Sou um Desenvolvedor Web cursando Engenharia de Software, com uma vasta experiência como desenvolvedor de produtos e projetista, trazendo soluções e buscando desafios.",
-                "É pela busca por maiores desafios que agora busco aplicar o que aprendi no desenvolvimento e solução de problemas na indústria, para a tecnologia.",
-                "Busco uma oportunidade de estágio em Web/Front-End para aprender, contribuir e dar meus primeiros passos na minha carreira em tecnologia."
+                "Sou um Desenvolvedor Web cursando Engenharia de Software, com uma vasta experiência na concepção de produtos e projetos, trazendo soluções e buscando desafios.",
+                "Motivado por maiores desafios, agora pretendo aplicar o que aprendi no desenvolvimento e solução de problemas na indústria, para a tecnologia.",
+                "Busco uma oportunidade de estágio em Engenharia de Software ou Desenvolvimento para aprender, contribuir com a equipe e iniciar minha carreira na criação de soluções tecnológicas."
             ]
         },
         "aboutMe": {
@@ -37,9 +37,9 @@
         "differential": {
             "title": "Meu Diferencial: Do Desenvolvimento de Produtos, ao Desenvolvimento de Software",
             "paragraphs": [
-                "Desenvolvimento e tecnologia fazem parte da minha jornada desde que comecei a trabalhar como desenhista 2D com AutoCAD. Eu apenas reproduzia e fazia simulações para as equipes de vendas e desenvolvimento, porém sempre me peguei pensando em coisas que poderiam ser feitas de maneira mais eficazes e/ou que trouxessem maior satisfação ao cliente. Foi por este motivo que me tornei um Projetista.",
-                "Como projetista, consegui trazer grandes mudanças para os processos, atuando principalmente como desenvolvedor de novos produtos, e mediante a uma maior proximidade com os vendedores e clientes, desenvolvi grandes soluções para a empresa, que foram desde sistemas originais personalizados de controle de qualidade até novas técnicas para orçamento que aceleraram em até 500% o processo de desenvolvimento, trazendo até mesmo ganho de precisão.",
-                "Depois de alguns anos atuando na área dentro de fábricas, me esbarrei diversas vezes nas limitações e resistência à busca de inovações dentro setores que atuei, ao mesmo tempo que meu fascínio pelos softwares que faziam parte do meu dia-a-dia só aumentavam, fizeram virar os olhos ao setor que mais inova e se desafia na história recente. Tecnologia.",
+                "Desenvolvimento e tecnologia fazem parte da minha jornada desde que comecei a trabalhar como desenhista 2D com AutoCAD. Eu apenas reproduzia e fazia simulações para as equipes de vendas e desenvolvimento, porém sempre me peguei pensando em coisas que poderiam ser feitas de maneira mais eficaz e/ou que trouxessem maior satisfação ao cliente. Foi por este motivo que me tornei um Projetista.",
+                "Como projetista, consegui trazer grandes mudanças para os processos, atuando principalmente como desenvolvedor de novos produtos. Mediante uma maior proximidade com os vendedores e clientes, desenvolvi grandes soluções para a empresa, que foram desde sistemas originais personalizados de controle de qualidade até novas técnicas para orçamento que aceleraram em até 500% o processo de desenvolvimento, trazendo até mesmo ganho de precisão.",
+                "Depois de alguns anos atuando na área dentro de fábricas, esbarrei diversas vezes nas limitações e na resistência à inovação dos setores em que atuei. Ao mesmo tempo, meu fascínio pelos softwares do dia a dia só aumentava, o que me fez voltar os olhos para o setor que mais inova na história recente: a Tecnologia.",
                 "O desenvolvimento Web/Front-End para mim é uma oportunidade de buscar desafios maiores, um início de jornada para aprender e me desenvolver, fazendo parte de soluções que movem o mundo e tanto impactam nossas vidas todos os dias."
             ]
         },
@@ -126,7 +126,7 @@
         },
         "projectsSection": {
             "title": "PROJETOS",
-            "description": "Aqui estão alguns dos projetos que desenvolvi para praticar e demonstrar minhas habilidades no desenvolvimento Front End. Serão adicionados com frequência novos projetos, especialmente originais, assim como atualização dos existentes com melhores práticas e conceitos aprendidos, o mesmo vale para este portfólio."
+            "description": "Aqui estão alguns dos projetos que desenvolvi para praticar e demonstrar minhas habilidades no desenvolvimento Front End. Novos projetos – especialmente os de autoria própria – serão adicionados com frequência, bem como a atualização dos existentes com novas práticas e conceitos aprendidos. O mesmo vale para este próprio portfólio."
         },
         "projects": [
             {
@@ -256,7 +256,7 @@
                 "role": "Consultor Autônomo",
                 "period": "05/2024 ~ Presente",
                 "responsibilities": [
-                    "Desenvolvimento de metodologias de trabalho e produtos, especificamente em borracha para as linhas automotiva e de construção, tornando processos mais rentáveis, eficientes e auditáveis.",
+                    "Desenvolvimento de metodologias de trabalho e produtos – especificamente em artefatos de borracha para as linhas automotiva e de construção civil –, tornando os processos mais rentáveis, eficientes e auditáveis.",
                     "Facilitação da integração de novos funcionários ao processo produtivo por meio de documentação técnica robusta, simples e objetiva para o quadro de fábrica.",
                     "Redução da probabilidade de erro humano através de sistemas."
                 ]
@@ -325,7 +325,7 @@
             "paragraphs": [
                 "I am a Web Developer studying Software Engineering, with extensive experience as a product developer and designer, bringing solutions and seeking challenges.",
                 "It is by seeking greater challenges that I now aim to apply what I've learned in development and problem-solving in the industry, to technology.",
-                "I am looking for an internship opportunity in Web/Front-End to learn, contribute, and take my first steps in my tech career."
+                "I am looking for an internship opportunity in Software Engineering or Development to learn, contribute to a team, and begin my career building technological solutions."
             ]
         },
         "aboutMe": {
