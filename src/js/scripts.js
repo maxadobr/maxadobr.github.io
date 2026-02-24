@@ -32,30 +32,30 @@ sectionlink.forEach(item => {
 // Setup Intersection Observer for nav highlighting
 const observerOptions = {
     root: null,
-    rootMargin: '-10% 0px -10% 0px',
-    threshold: [0, 0.2, 0.4, 0.6, 0.8, 1.0]
+    rootMargin: '0px',
+    threshold: Array.from({ length: 21 }, (_, i) => i / 20)
 };
 
-const visibleSections = {};
+const navObserver = new IntersectionObserver(() => {
+    let maxHeight = 0;
+    let activeId = null;
 
-const navObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        const id = entry.target.getAttribute('id');
-        if (entry.isIntersecting) {
-            visibleSections[id] = entry.intersectionRatio;
-        } else {
-            delete visibleSections[id];
+    document.querySelectorAll('.section-block').forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const visibleTop = Math.max(0, rect.top);
+        const visibleBottom = Math.min(window.innerHeight, rect.bottom);
+        const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+
+        if (visibleHeight > maxHeight) {
+            maxHeight = visibleHeight;
+            activeId = section.getAttribute('id');
         }
     });
 
-    let maxRatio = 0;
-    let activeId = null;
-
-    for (const [id, ratio] of Object.entries(visibleSections)) {
-        if (ratio > maxRatio) {
-            maxRatio = ratio;
-            activeId = id;
-        }
+    const isAtBottom = Math.ceil(window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 50;
+    if (isAtBottom) {
+        const sections = document.querySelectorAll('.section-block');
+        activeId = sections[sections.length - 1].getAttribute('id');
     }
 
     if (activeId) {
@@ -225,15 +225,10 @@ function renderContent() {
         const sectionPres = document.createElement('section');
         sectionPres.className = "presentation";
 
-        const pcImg = document.createElement('img');
-        pcImg.className = "pc-img pc" + (project.name === "Youtube Page Clone" ? " big-image" : "");
-        pcImg.src = project.imagePc;
-        sectionPres.appendChild(pcImg);
-
-        const phoneImgMain = document.createElement('img');
-        phoneImgMain.className = "pc-img phone";
-        phoneImgMain.src = project.imagePhone;
-        sectionPres.appendChild(phoneImgMain);
+        const imgMockup = document.createElement('img');
+        imgMockup.className = "mockup-image";
+        imgMockup.src = project.image;
+        sectionPres.appendChild(imgMockup);
 
         const divDetails = document.createElement('div');
         const pDesc = document.createElement('p');
@@ -272,19 +267,6 @@ function renderContent() {
                 sectionDet.appendChild(ulFeat);
             }
 
-            if (project.phoneMockupPc) {
-                const phoneImgPc = document.createElement('img');
-                phoneImgPc.className = "phone-img pc" + (project.name === "Youtube Page Clone" ? " big-image" : "");
-                phoneImgPc.src = project.phoneMockupPc;
-                sectionDet.appendChild(phoneImgPc);
-            }
-
-            if (project.phoneMockupPhone) {
-                const phoneImgPhone = document.createElement('img');
-                phoneImgPhone.className = "phone-img phone";
-                phoneImgPhone.src = project.phoneMockupPhone;
-                sectionDet.appendChild(phoneImgPhone);
-            }
             divDetails.appendChild(sectionDet);
         }
 
