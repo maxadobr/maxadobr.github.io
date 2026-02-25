@@ -262,15 +262,31 @@
 
 .project .details ul.tech-list {
     padding-left: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .project .details ul.tech-list li {
     list-style: none;
+    font-size: 0.9rem;
+    background-color: var(--bg-color2);
+    padding: 0.2rem 0.8rem;
+    border-radius: 1rem;
+    border: solid 1px var(--bg-border2);
+    color: var(--color1);
 }
 
 .project .details ul.tech-list li strong {
-    color: var(--highlight);
-    margin-right: 0.5rem;
+    display: none;
+    /* Hide the arrow from tags */
+}
+
+/* Subtle separator for features list if needed, or between lists */
+.project .details ul.feat-list {
+    padding-top: 1rem;
+    border-top: dashed 1px var(--bg-border3);
 }
 
 .project__list-divider {
@@ -307,10 +323,8 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.project-buttons div {
-    margin: 2rem 1rem 0 1rem;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 .project-buttons button {
@@ -770,7 +784,10 @@
 
     .project .presentation>div {
         text-wrap: wrap;
-        width: 30%;
+        flex: 1;
+        /* Helps to expand to fill the margin gap to the right */
+        display: flex;
+        flex-direction: column;
     }
 
     .project .presentation>div p {
@@ -790,21 +807,36 @@
     }
 
     .project .details {
-        justify-content: flex-end;
-        align-content: center;
+        justify-content: flex-start;
+        /* Changed to start reading from the left aligned with text */
+        align-content: flex-start;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .project .mockup-image {
         display: inline-block;
         width: 60%;
-        margin: 0;
+        margin: 0 0 1.5rem 0;
         align-self: flex-start;
+    }
+
+    .project-buttons {
+        justify-content: flex-start;
+        align-items: flex-end;
+        /* Align to the bottom if there's space */
+        flex-wrap: nowrap;
+        gap: 1rem;
+        width: 100%;
+        margin-top: auto;
+        /* Push the buttons to the bottom of the flex container */
+        padding-bottom: 1.5rem;
+        /* Match the image bottom margin */
     }
 
     .project-buttons button {
         width: auto;
-        min-width: 14rem;
+        min-width: 12rem;
         height: 3.5rem;
         border-radius: 2rem;
         font-size: 1.1rem;
