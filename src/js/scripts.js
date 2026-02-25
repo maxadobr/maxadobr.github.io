@@ -236,7 +236,7 @@ function renderContent() {
             linkDemo.href = project.demoUrl;
             linkDemo.target = "_blank";
             const btnDemo = document.createElement('button');
-            btnDemo.textContent = "Preview";
+            btnDemo.textContent = "Demonstração";
             linkDemo.appendChild(btnDemo);
             projectLinks.appendChild(linkDemo);
         }
@@ -251,7 +251,8 @@ function renderContent() {
             projectLinks.appendChild(linkRepo);
         }
 
-        article.appendChild(projectLinks);
+        divDetails.appendChild(projectLinks);
+        article.appendChild(sectionPres);
         projContainer.appendChild(article);
     });
 
